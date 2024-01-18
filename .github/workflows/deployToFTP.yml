@@ -1,0 +1,35 @@
+name: Build and Upload to FTP
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: ⇣ Install dependencies ⇣
+        run: npm ci
+
+      - name: ⚙️ Build project ⚙️
+        run: npm run build
+
+      - name: 📂 Upload to FTP 📂
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: asobility.sakura.ne.jp
+          username: asobility
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          server-dir: /home/asobility/www/lp/
+          local-dir: dist/

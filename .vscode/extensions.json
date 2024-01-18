@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "sibiraj-s.vscode-scss-formatter",
+        "mrmlnc.vscode-apache",
+        "akamud.vscode-theme-onedark",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "dzhavat.bracket-pair-toggler",
+        "vmsynkov.colonize",
+        "digitalbrainstem.javascript-ejs-support",
+        "taodongwu.ejs-snippets",
+        "letrieu.expand-region",
+        "eamodio.gitlens",
+        "oderwat.indent-rainbow",
+        "figma.figma-vscode-extension"
+    ]
+}

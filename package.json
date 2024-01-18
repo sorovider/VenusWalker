@@ -1,0 +1,28 @@
+{
+  "name": "lp-template",
+  "version": "1.0.0",
+  "description": "A template for creating landing pages with automatic SASS compilation using Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.16",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-ejs": "^5.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "node-fs-extra": "^0.8.2",
+    "sass": "^1.64.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}

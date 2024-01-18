@@ -1,0 +1,9 @@
+.DS_Store
+dist
+node_modules
+css
+*.memo
+*.html
+*.png.webp
+*.jpeg.webp
+*.jpg.webp

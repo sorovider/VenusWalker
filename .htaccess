@@ -1,0 +1,10 @@
+ExpiresActive On
+ExpiresByType text/css "access plus 4 weeks"
+ExpiresByType image/gif "access plus 4 weeks"
+ExpiresByType image/png "access plus 4 weeks"
+ExpiresByType image/jpeg "access plus 4 weeks"
+ExpiresByType image/pdf "access plus 4 weeks"
+ExpiresByType image/webp "access plus 4 weeks"
+ExpiresByType application/x-shockwave-flash "access plus 4 weeks"
+ExpiresByType application/rss+xml "access plus 4 weeks"
+ExpiresByType application/x-javascript "access plus 4 weeks"
