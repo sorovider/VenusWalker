@@ -1,24 +1,29 @@
 // _variables.scss
 
 // Colors
-$primary-background-color: #FFFFFF;
-$secondary-background-color: #FDF2F2;
-$accent-background-color:#DB6181;
+$primary-background-color: #FFFCF4;
+$secondary-background-color: #FF3396;
+$accent-background-color:#F9909C;
 
 $primary-font-color:  #000000;
-$pink-font-color:#C64063;
-$light-pink-font-color:#DB6181;
+$pink-font-color:#F9298E;
+$light-pink-font-color: #E05E80;
 $white-font-color:#FFFFFF;
-$gray-font-color:#474747;
+$brown-font-color: #570A1E;
 
 
 
 // Font stacks
-$Roboto: "roboto", sans-serif;
-$EB: "eb-garamond", serif;
-$Ryo: "ryo-gothic-plusn", sans-serif;
-$Din: "din-2014", sans-serif;
-$Shipo: "shippori-mincho", sans-serif;
+$Din: din-2014, sans-serif;
+$Sans: noto-sans, sans-serif;
+$Toppan: toppan-bunkyu-midashi-min-st, serif;
+$RokunRoll: rocknroll-one, sans-serif;
+$Mplus: m-plus-rounded-1c, sans-serif;
+$Hiragino: hiragino-kaku-gothic-pron, sans-serif;
+$Kiwi: kiwi-maru, sans-serif;
+$Yomogi: yomogi, sans-serif;
+$Gugi: gugi, sans-serif;
+
 
 // Font weight
 $black: 900;

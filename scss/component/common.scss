@@ -92,19 +92,3 @@ section {
     .content-area {
     }
 
-    footer {
-        margin: 50px 0;
-        @include mq(tab) {
-            margin: 15vw 0;
-        }
-        p {
-            font-family: $Roboto;
-            font-weight: $regular;
-            font-size: 14px;
-            color: $primary-font-color;
-            text-align: center;
-            @include mq(tab) {
-                font-size: 3.8vw;
-            }
-        }
-    }
