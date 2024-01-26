@@ -1,0 +1,142 @@
+.recommend {
+    background-image: url(/images/recommend/bg/recommend-bg.svg);
+    background-size: 100% 100%;
+    height: 748px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 68px;
+    margin-bottom: 70px;
+
+    .left-shape {
+        width: 23.55vw;
+        position: absolute;
+        left: 0;
+        top: -6vw;
+    }
+
+    .right-shape {
+        width: 20.425vw;
+        position: absolute;
+        right: 0;
+        bottom: 8vw;
+    }
+
+    .recommend-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .recommend-contents__top-speech-bubbles {
+            display: flex;
+
+            .top-speech-bubbles__speech-bubble-1 {
+                transform: translate(73px, 59px);
+            }
+
+            .top-speech-bubbles__speech-bubble-2 {
+                z-index: 400;
+            }
+
+            .top-speech-bubbles__speech-bubble-3 {
+                z-index: 300;
+                transform: translateX(-30px);
+            }
+
+            .top-speech-bubbles__speech-bubble-4 {
+                transform: translate(-64px, 51px);
+            }
+        }
+
+        .recommend-contents__bottom-speech-bubbles {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .bottom-speech-bubbles__speech-bubble-1 {
+                transform: translate(-59px, -4px);
+            }
+
+            .bottom-speech-bubbles__speech-bubble-2 {
+                z-index: 400;
+                transform: translate(-3px, 44px);
+            }
+
+            .bottom-speech-bubbles__speech-bubble-3 {
+                z-index: 300;
+                transform: translate(31px, 49px);
+            }
+
+            .bottom-speech-bubbles__speech-bubble-4 {
+                transform: translate(65px, 0px);
+            }
+        }
+
+        .top-speech-bubbles__speech-bubble-1,
+        .top-speech-bubbles__speech-bubble-2,
+        .top-speech-bubbles__speech-bubble-3,
+        .top-speech-bubbles__speech-bubble-4,
+        .bottom-speech-bubbles__speech-bubble-1,
+        .bottom-speech-bubbles__speech-bubble-2,
+        .bottom-speech-bubbles__speech-bubble-3,
+        .bottom-speech-bubbles__speech-bubble-4 {
+            position: relative;
+            
+            .top-speech-bubbles__speech-bubble-1--img {
+                rotate: -149.37deg;
+                transform: translate(-24px, -9px);
+            }
+
+            .top-speech-bubbles__speech-bubble-2--img {
+                transform: translate(7px, 10px);
+            }
+
+            .top-speech-bubbles__speech-bubble-3--img {
+                rotate: 27.52deg;
+            }
+
+            .top-speech-bubbles__speech-bubble-4--img {
+                rotate: 107deg;
+            }
+
+            .bottom-speech-bubbles__speech-bubble-1--img {
+                rotate: 30.63deg;
+                transform: translate(-13px, 15px);
+            }
+
+            .bottom-speech-bubbles__speech-bubble-2--img {
+                rotate: 180deg;
+            }
+
+            .bottom-speech-bubbles__speech-bubble-3--img {
+                rotate: -152.48deg;
+            }
+
+            .bottom-speech-bubbles__speech-bubble-4--img {
+                rotate: -73deg;
+                transform: translate(-11px, 0px);
+            }
+
+            .top-speech-bubbles__speech-bubble-1--txt,
+            .top-speech-bubbles__speech-bubble-2--txt,
+            .top-speech-bubbles__speech-bubble-3--txt,
+            .top-speech-bubbles__speech-bubble-4--txt,
+            .bottom-speech-bubbles__speech-bubble-1--txt,
+            .bottom-speech-bubbles__speech-bubble-2--txt,
+            .bottom-speech-bubbles__speech-bubble-3--txt,
+            .bottom-speech-bubbles__speech-bubble-4--txt  {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-family: $Hiragino;
+                font-size: 24px;
+                color: $brown-font-color;
+                letter-spacing: -0.1em;
+                white-space: nowrap;
+                text-align: center;
+            }
+        }
+    }
+}
