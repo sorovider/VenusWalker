@@ -1,0 +1,50 @@
+.about {
+    margin-top: 68px;
+
+    .about-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 87px;
+
+        .about-img {
+    
+        }
+    
+        .about-txt-container {
+            text-align: center;
+            font-family: $Sans;
+            flood-color: $primary-font-color;
+            font-weight: $bold;
+            text-shadow: 4px 4px 4px #FFFCF4;
+            transform: translateX(-90px);
+            text-shadow:1px 1px 0px #fffcf4, -1px -1px 0px #fffcf4, 
+            2px 2px 0px #fffcf4, -2px -2px 0px #fffcf4,
+            3px 3px 1px #fffcf4, -3px -3px 1px #fffcf4;
+    
+            .pink-txt {
+                color: $pink-font-color;
+            }
+    
+            .about-txt-container__about-ttl {
+                font-size: 32px;
+                margin-bottom: 52px;
+    
+                .pink-txt {
+                    font-weight: $black;
+                    font-size: 40px;
+                }
+            }
+    
+            .about-txt-container__about-txt {
+                font-size: 16px;
+                line-height: 1.87;
+    
+                .pink-txt {
+                    font-size: 20px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.section-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    .dot {
+        width: 20px;
+        height: 20px;
+        background-color: $brown-font-color;
+        border-radius: 50%;
+    }
+}
