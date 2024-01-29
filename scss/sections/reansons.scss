@@ -1,0 +1,168 @@
+.reasons {
+    position: relative;
+
+    .top-left-shape {
+        width: 20.76vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include mq(wpc) {
+            width: 11vw;
+        }
+    }
+
+    .bottom-left-shape {
+        width: 17vw;
+        position: absolute;
+        bottom: 21%;
+        left: 0;
+
+        @include mq(wpc) {
+            width: 11vw;
+        }
+    }
+
+    .middle-right-shape {
+        width: 22.36vw;
+        position: absolute;
+        bottom: 41%;
+        right: 0;
+
+        @include mq(wpc) {
+            width: 11vw;
+        }
+    }
+
+    .reasons__ttl-with-img {
+        display: flex;
+        position: relative;
+        margin-top: 67px;
+        transform: translateX(-50px);
+
+        .reasons__ttl-with-img--ttl {
+            transform: translate(30px, 90px);
+        }
+    }
+
+    .reasons__points {
+        display: flex;
+        margin-bottom: 110px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 111px 32px;
+        margin-top: -30px;
+        width: 1100px;
+
+        .point {
+            border: 6px solid $brown-font-color;
+            border-radius: 10px;
+            box-shadow: 8px 8px #FCC944;
+            background-color: #ffffff;
+            width: 480px;
+            height: 440px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+
+            .point__ttl {
+                font-family: $Gugi;
+                color: $light-pink-font-color;
+                font-weight: $regular;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                position: absolute;
+                top: -80px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                .point__ttl--txt {
+                    font-size: 16px;
+                    position: relative;
+                    text-shadow: 1px 1px #fff, -1px -1px #fff,
+                        2px 2px #fff, -2px -2px #fff,
+                        3px 3px #fff, -3px -3px #fff,
+                        4px 3px #fff, -4px -3px #fff,
+                        5px 1px #fff, -5px -1px #fff;
+
+                    &::after {
+                        content: "";
+                        width: 20px;
+                        height: 6px;
+                        background-color: $light-pink-font-color;
+                        position: absolute;
+                        top: 25px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                .point__ttl--num {
+                    font-size: 64px;
+                    text-shadow: 5px 1px #fff, -5px -1px #fff;
+                }
+            }
+
+            .point__txt {
+                font-family: $Sans;
+                font-weight: $black;
+                font-size: 28px;
+                color: $brown-font-color;
+                text-shadow:1px 1px 2px #fff, -1px -1px 2px #fff,
+                    2px 2px 2px #fff, -2px -2px 2px #fff,
+                    1px -1px 2px #fff, -1px 1px 2px #fff,
+                    2px -2px 2px #fff, -2px 2px 2px #fff, ;
+                background: linear-gradient(transparent 80%, #D9D9D9 80%);
+                padding: 0 7px;
+            }
+
+            .point__dtl {
+                font-family: $Sans;
+                font-weight: $bold;
+                font-size: 16px;
+                color: $brown-font-color;
+                width: 360px;
+                height: 90px;
+                text-align: center;
+                margin: 26px 0 52px 0;
+                line-height: 1.8;
+            }
+        }
+
+        .point-1 {
+
+            .point__icon {
+                margin-bottom: 37px;
+            }
+
+            .point__txt {
+                padding: 0 25px;
+            }
+        }
+
+        .point-2 {
+
+            .point__icon {
+                margin-bottom: 12px;
+            }
+        }
+
+        .point-3 {
+
+            .point__icon {
+                margin-bottom: 35px;
+            }
+        }
+
+        .point-4 {
+
+            .point__icon {
+                margin-bottom:43px;
+            }
+        }
+    }
+}

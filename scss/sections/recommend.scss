@@ -10,17 +10,25 @@
     margin-bottom: 70px;
 
     .left-shape {
-        width: 23.55vw;
+        width: 16.319vw;
         position: absolute;
         left: 0;
-        top: -6vw;
+        top: -1vw;
+
+        @include mq(wpc) {
+            width : 11vw;
+        }
     }
 
     .right-shape {
-        width: 20.425vw;
+        width: 18.68vw;
         position: absolute;
         right: 0;
         bottom: 8vw;
+
+        @include mq(wpc) {
+            width: 12vw;
+        }
     }
 
     .recommend-contents {
@@ -55,7 +63,7 @@
             flex-direction: row-reverse;
 
             .bottom-speech-bubbles__speech-bubble-1 {
-                transform: translate(-59px, -4px);
+                transform: translate(-67px, -4px);
             }
 
             .bottom-speech-bubbles__speech-bubble-2 {
