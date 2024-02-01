@@ -8,7 +8,7 @@
   justify-content: center;
 
   .left-shape {
-    width: 16.319vw;
+    width: 18.47vw;
     position: absolute;
     left: 0;
     bottom: -1vw;
@@ -19,7 +19,7 @@
   }
 
 .right-shape {
-    width: 18.68vw;
+    width: 18.19vw;
     position: absolute;
     right: 0;
     top: -4vw;
@@ -80,7 +80,11 @@
                     font-size: 36.23px;
                     display: inline-block;
                     transform: translate(3px,9px);
-                    text-shadow: 3px 2px 1px #fff;
+                    text-shadow:
+                    1px 1px #FFFFFF,-1px -1px #FFFFFF,-1px 1px  #FFFFFF,1px -1px #FFFFFF,
+                    2px 1px #FFFFFF,-2px -1px #FFFFFF,-2px 1px  #FFFFFF,2px -1px #FFFFFF,
+                    3px 2px 2px #FFFFFF,-3px -2px 2px #FFFFFF,-3px 2px 2px #FFFFFF,3px -2px 2px #FFFFFF,
+                    4px 2px 2px  #FFFFFF,-4px -2px 2px  #FFFFFF,-4px 2px 2px #FFFFFF,4px -2px 2px #FFFFFF;
                 }
             }
             
@@ -99,7 +103,11 @@
                 
                 .pink {
                     font-size: 32px;
-                    text-shadow: 3px 2px 1px #fff;
+                    text-shadow:
+                    1px 1px #FFFFFF,-1px -1px #FFFFFF,-1px 1px  #FFFFFF,1px -1px #FFFFFF,
+                    2px 1px #FFFFFF,-2px -1px #FFFFFF,-2px 1px  #FFFFFF,2px -1px #FFFFFF,
+                    3px 2px 2px #FFFFFF,-3px -2px 2px #FFFFFF,-3px 2px 2px #FFFFFF,3px -2px 2px #FFFFFF,
+                    4px 2px 2px  #FFFFFF,-4px -2px 2px  #FFFFFF,-4px 2px 2px #FFFFFF,4px -2px 2px #FFFFFF;
                 }
             }
 
@@ -116,7 +124,10 @@
 
                 .put-on-txt {
                     display: inline-block;
-                    text-shadow: 3px 2px 1px #fff;
+                    text-shadow: 
+                    1px 1px #FFFFFF,-1px -1px #FFFFFF,-1px 1px  #FFFFFF,1px -1px #FFFFFF,
+                    2px 1px #FFFFFF,-2px -1px #FFFFFF,-2px 1px  #FFFFFF,2px -1px #FFFFFF,
+                    3px 2px  #FFFFFF,-3px -2px  #FFFFFF,-3px 2px  #FFFFFF,3px -2px  #FFFFFF;
                     transform: translate(-4px, 4px);
                 }
             }

@@ -1,0 +1,276 @@
+.seminar {
+  position: relative;
+  margin-top: 51px;
+
+  .left-shape {
+    width: 27.5vw;
+    position: absolute;
+    left: 0;
+    bottom: 9vw;
+
+    @include mq(wpc) {
+        width : 11vw;
+        bottom: 2vw;
+    }
+  }
+
+.right-shape {
+  width: 14.51vw;
+    position: absolute;
+    right: 0;
+    bottom: 22vw;
+
+    @include mq(wpc) {
+        width: 11vw;
+        bottom: 10vw;
+    }
+  }
+
+  .seminar__ttl-container {
+    display: flex;
+    align-items: center;
+    margin: 85px 0 13px 0;
+
+    .seminar__ttl-container--ttl {
+      position: relative;
+      z-index: 100;
+    }
+
+    .seminar__ttl-container--left-img {
+      transform: translateX(15px);
+    }
+
+    .seminar__ttl-container--right-img {
+      transform: translateX(-25px);
+    }
+  }
+
+  .seminar__contents {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    z-index: 100;
+
+    .seminar-left-content,
+    .seminar-right-content {
+      width: 620px;
+      height: 663.43px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .seminar-content__top-content {
+        width: 520px;
+        height: 140px;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 75px;
+
+        .seminar-content__top-content--img-box {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+
+          .seminar-content__top-content--img {
+            transform: translate(-13px,-14px);
+          }
+        }
+
+        .seminar-content__top-content--txt {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 100;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+      }
+
+      .seminar-content__dtl {
+        font-family: $Sans;
+        font-weight: $bold;
+        
+        .seminar-content__dtl--list {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          list-style: none;
+        }
+      }
+
+    }
+
+    .seminar-left-content {
+      background-color: $light-pink-font-color;
+
+      .seminar-content__top-content {
+        background-color: #FFFCF4;
+
+        .seminar-content__top-content--txt {
+          font-family: $Sans;
+          font-weight: $black;
+          font-size: 24px;
+          text-shadow: 
+          1px 1px #FFFCF4,-1px -1px #FFFCF4,-1px 1px  #FFFCF4,1px -1px #FFFCF4,
+          2px 2px #FFFCF4,-2px -2px #FFFCF4,-2px 2px  #FFFCF4,2px -2px #FFFCF4,
+          3px 3px  #FFFCF4,-3px -3px  #FFFCF4,-3px 3px  #FFFCF4,3px -3px  #FFFCF4,
+          4px 2px  #FFFCF4,-4px -2px  #FFFCF4,-4px 2px  #FFFCF4,4px -2px  #FFFCF4;
+          white-space: nowrap;
+
+          
+          .pink-mark {
+            color: $light-pink-font-color;
+            font-size: 36px;
+          }
+
+          .pink {
+            color: $light-pink-font-color;
+            font-size: 36px;
+            text-shadow:
+            1px 1px #FFFCF4,-1px -1px #FFFCF4,-1px 1px  #FFFCF4,1px -1px #FFFCF4,
+            2px 1px #FFFCF4,-2px -1px #FFFCF4,-2px 1px  #FFFCF4,2px -1px #FFFCF4,
+            3px 2px 2px #FFFCF4,-3px -2px 2px #FFFCF4,-3px 2px 2px #FFFCF4,3px -2px 2px #FFFCF4,
+            4px 2px 2px  #FFFCF4,-4px -2px 2px  #FFFCF4,-4px 2px 2px #FFFCF4,4px -2px 2px #FFFCF4;
+            background: linear-gradient(transparent 80%, #F9909C 80%);
+          }
+        }
+      }
+
+      .seminar-content__dtl {
+        color: #FFFFFF;
+
+        .seminar-content__dtl--top-txt {
+          font-size: 20px;
+          margin-top: 38px;
+        }
+
+        .seminar-content__dtl--list {
+          margin: 40px 0;
+
+          .seminar-content__dtl--txt-box {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            
+            .dtl-txt {
+              font-size: 32px;
+              text-shadow:
+              1px 1px $light-pink-font-color,-1px -1px $light-pink-font-color,-1px 1px $light-pink-font-color,1px -1px $light-pink-font-color,
+              2px 1px $light-pink-font-color,-2px -1px $light-pink-font-color,-2px 1px  $light-pink-font-color,2px -1px $light-pink-font-color,
+              3px 2px 2px $light-pink-font-color,-3px -2px 2px $light-pink-font-color,-3px 2px 2px $light-pink-font-color,3px -2px 2px $light-pink-font-color,
+              4px 2px 2px  $light-pink-font-color,-4px -2px 2px  $light-pink-font-color,-4px 2px 2px $light-pink-font-color,4px -2px 2px $light-pink-font-color;
+              background: linear-gradient(transparent 70%, $brown-font-color 70%);
+              padding: 0 20px;
+            }
+          }
+        }
+
+        .seminar-content__dtl--bottom-txt {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+
+    .seminar-right-content {
+      border: 3px solid $light-pink-font-color;
+      background-color: transparent;
+
+      .seminar-content__top-content {
+        background-color: $light-pink-font-color;
+
+        .seminar-content__top-content--txt {
+          font-family: $Sans;
+          font-weight: $black;
+          font-size: 24px;
+          color: #FFFFFF;
+          text-shadow: 
+          1px 1px $light-pink-font-color,-1px -1px $light-pink-font-color,-1px 1px  $light-pink-font-color,1px -1px $light-pink-font-color,
+          2px 2px $light-pink-font-color,-2px -2px $light-pink-font-color,-2px 2px  $light-pink-font-color,2px -2px $light-pink-font-color,
+          3px 3px  $light-pink-font-color,-3px -3px  $light-pink-font-color,-3px 3px  $light-pink-font-color,3px -3px  $light-pink-font-color,
+          4px 1px  $light-pink-font-color,-4px -1px  $light-pink-font-color,-4px 1px  $light-pink-font-color,4px -1px  $light-pink-font-color;
+          white-space: nowrap;
+
+          .pink {
+            font-size: 36px;
+            text-shadow:
+            1px 1px $light-pink-font-color,-1px -1px $light-pink-font-color,-1px 1px  $light-pink-font-color,1px -1px $light-pink-font-color,
+            2px 1px $light-pink-font-color,-2px -1px $light-pink-font-color,-2px 1px  $light-pink-font-color,2px -1px $light-pink-font-color,
+            3px 2px 2px $light-pink-font-color,-3px -2px 2px $light-pink-font-color,-3px 2px 2px $light-pink-font-color,3px -2px 2px $light-pink-font-color,
+            4px 2px 2px  $light-pink-font-color,-4px -2px 2px  $light-pink-font-color,-4px 2px 2px $light-pink-font-color,4px -2px 2px $light-pink-font-color;
+            background: linear-gradient(transparent 80%, #F9909C 80%);
+          }
+        }
+      }
+
+      .seminar-content__dtl {
+
+        .seminar-content__dtl--top-txt {
+          font-size: 32px;
+          margin-top: 47px;
+        }
+
+        .seminar-content__dtl--list {
+
+          .seminar-content__dtl--txt {
+            font-size: 25px;
+            color: $brown-font-color;
+            text-shadow: 1px 1px #fffcf4, -1px -1px #fffcf4, 
+            -1px 1px #fffcf4, 1px -1px #fffcf4, 2px 2px #fffcf4, 
+            -2px -2px #fffcf4, -2px 2px #fffcf4, 2px -2px #fffcf4, 
+            3px 2px 2px #fffcf4, -3px -2px 2px #fffcf4, -3px 2px 2px #fffcf4, 3px -2px 2px #fffcf4;
+
+            .move-right-txt {
+              display: inline-block;
+              transform: translateX(30px);
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .seminar__bottom-contnt {
+    display: flex;
+    margin: 85px 0 48px 0;
+
+    .seminar__bottom-contnt--txt {
+      font-family: $Sans;
+      font-weight: $bold;
+      font-size: 32px;
+      color: #000;
+      position: relative;
+      z-index: 100;
+      text-align: center;
+
+      .pink {
+        color: $light-pink-font-color;
+        font-size: 40px;
+        text-shadow: 1px 1px #fffcf4, 
+        -1px -1px #fffcf4, -1px 1px #fffcf4, 1px -1px #fffcf4,
+        2px 2px #fffcf4, -2px -2px #fffcf4, -2px 2px #fffcf4, 2px -2px #fffcf4,
+        3px 3px #fffcf4, -3px -3px #fffcf4, -3px 3px #fffcf4, 3px -3px #fffcf4,
+        4px 2px #fffcf4, -4px -2px #fffcf4, -4px 2px #fffcf4, 4px -2px #fffcf4;
+
+        .big-pink {
+          font-size: 64px;
+          font-weight: $black;
+        }
+        
+        .middle-pink {
+          font-size: 54px;
+          font-weight: $black;
+        }
+      }
+    }
+
+    .seminar__bottom-contnt--img {
+      margin-left: -110px;
+    }
+  }
+}
