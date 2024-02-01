@@ -1,0 +1,56 @@
+<%
+const voices = [
+    {
+        voice: '最近のスキンケア事情は<br>ヴィーナスウォーカーで仕入れたものばかり♪実質無料で色んなスキンケアを次々と試せるからお肌の調子が良い',
+        monitorImg: '/images/voice/voice-img-1.png.webp',
+        monitorInfo: '30代　主婦',
+    },
+    {
+        voice: 'ヴィーナスウォーカー東特して電話セミナーうけて、登録日に申し込んだ案件が承認されてきた！スタッフさんの対応が早くて丁寧な印象！',
+        monitorImg: '/images/voice/voice-img-2.png.webp',
+        monitorInfo: '20代　会社員',
+    },
+    {
+        voice: 'もともと脱毛をしたいと思っていたので、<br>モニターとして利用すれば報酬ももらえてラッキーでした。',
+        monitorImg: '/images/voice/voice-img-3.png.webp',
+        monitorInfo: '30代　自営業',
+    },
+    {
+        voice: 'ヴィーナスウォーカーを始めてから化粧品代、サプリ代がかなり浮いてる♪すごくお得でその分自分にお金使える！',
+        monitorImg: '/images/voice/voice-img-4.png.webp',
+        monitorInfo: '40代　主婦',
+    },
+]
+
+%>
+
+<section class="voice">
+
+  <img class="left-shape" src="/images/voice/left-shape.svg">
+  <img class="right-shape" src="/images/voice/right-shape.svg">
+
+  <div class="voice__ttl-container">
+    <h2>
+      <img class="voice__ttl-container--ttl" src="/images/voice/voice-ttl.png.webp" width="353.24" height="149.66" alt="モニター様ご利用者様の声">
+    </h2>
+    <img class="voice__ttl-container--img" src="/images/voice/ttl-img.png.webp" width="97.15" height="163.15" alt="女の人のイラスト">
+  </div>
+
+  <div class="voice-contents">
+    <% for (const voice of voices) { %>
+    <div class="voice-content">
+      <div class="voice-content__txt-box">
+        <p class="voice-content__txt-box--txt">
+          <%- voice.voice %>
+        </p>
+      </div>
+      <div class="voice-content__monitor-box">
+        <img class="voice-content__monitor-box--monitor-img" src="<%= voice.monitorImg %>" width="119" height="154" alt="女の人のイラスト">
+        <p class="voice-content__monitor-box--monitor-info"><%= voice.monitorInfo %></p>
+      </div>
+    </div>
+    <% } %>
+  </div>
+
+  <%- include('../components/_section-dot') -%>
+</section>
