@@ -22,7 +22,7 @@ const paths = {
 }
 
 const distPaths = [
-    './images/**/*.{webp,ico}',
+    './images/**/*.{webp,ico,svg}',
     './css/**/*.css',
     './fonts/**/*',
     '.htaccess',
