@@ -31,17 +31,71 @@
     align-items: center;
     margin: 85px 0 13px 0;
 
-    .seminar__ttl-container--ttl {
+    .seminar__ttl-container--ttl-box {
       position: relative;
       z-index: 100;
+      transform: translateY(-15px);
+
+      .ttl-box__ttl-note--box {
+        transform: translateY(50px);
+
+        .ttl-box__ttl-note--svg {
+
+          .ttl-box__ttl-note {
+            font-weight       : $bold;
+            font-size         : 36px;
+            font-family       : $Sans;
+            stroke            : $brown-font-color;
+            fill              : #fffcf4;
+            text-anchor       : middle;
+            dominant-baseline : alphabetic;
+          }
+  
+          &:nth-child(1) {
+            stroke-width      : 11px;
+            paint-order       : stroke;
+          }
+  
+          &:nth-child(2) {
+            stroke-width      : 0;
+          }
+        }
+      }
+
+      .ttl-box__ttl--box {
+
+        .ttl-box__ttl--svg {
+          overflow: initial;
+          transform: translateY(-45px);
+  
+          .ttl-box__ttl {
+            font-weight       : $bold;
+            font-size         : 64px;
+            font-family       : $Sans;
+            stroke            : #FFFFFF;
+            fill              : $brown-font-color;
+            text-anchor       : middle;
+            dominant-baseline : alphabetic;
+          }
+  
+          &:nth-child(1) {
+            stroke-width      : 11px;
+            paint-order       : stroke;
+          }
+  
+          &:nth-child(2) {
+            stroke-width      : 0;
+          }
+        }
+      }
     }
 
     .seminar__ttl-container--left-img {
-      transform: translateX(15px);
+      transform: translateX(-32px);
     }
 
     .seminar__ttl-container--right-img {
-      transform: translateX(-25px);
+      transform: translateX(10px);
     }
   }
 
@@ -78,7 +132,7 @@
           }
         }
 
-        .seminar-content__top-content--txt {
+        .seminar-content__top-content--txt-box {
           position: absolute;
           top: 50%;
           left: 50%;
@@ -110,32 +164,105 @@
       .seminar-content__top-content {
         background-color: #FFFCF4;
 
-        .seminar-content__top-content--txt {
-          font-family: $Sans;
-          font-weight: $black;
-          font-size: 24px;
-          text-shadow: 
-          1px 1px #FFFCF4,-1px -1px #FFFCF4,-1px 1px  #FFFCF4,1px -1px #FFFCF4,
-          2px 2px #FFFCF4,-2px -2px #FFFCF4,-2px 2px  #FFFCF4,2px -2px #FFFCF4,
-          3px 3px  #FFFCF4,-3px -3px  #FFFCF4,-3px 3px  #FFFCF4,3px -3px  #FFFCF4,
-          4px 2px  #FFFCF4,-4px -2px  #FFFCF4,-4px 2px  #FFFCF4,4px -2px  #FFFCF4;
-          white-space: nowrap;
+        .seminar-content__top-content--txt-box {
+
+          .seminar-content__top-content--top-text {
+            font-family: $Sans;
+            font-weight: $black;
+            font-size: 24px;
+          }
+
+          .seminar-content__top-content--bottom-text {
+            display: flex;
+            white-space: nowrap;
+            height: 50px;
+
+            .bottom-text--pink {
+              width: 225px;
+              background: linear-gradient(transparent 80%, #F9909C 80%);
+
+              svg {
+                overflow: initial;
+        
+                text {
+                  font-weight       : $black;
+                  font-size         : 36px;
+                  font-family       : $Sans;
+                  stroke            : $primary-background-color;
+                  fill              : $light-pink-font-color;
+                  text-anchor       : middle;
+                  dominant-baseline : alphabetic;
+                }
+        
+                &:nth-child(1) {
+                  stroke-width      : 7px;
+                  paint-order       : stroke;
+                }
+        
+                &:nth-child(2) {
+                  stroke-width      : 0;
+                }
+              }
+            }
+
+            .bottom-text--black {
+              width: 203px;
+              svg {
+                overflow: initial;
+
+                text {
+                  font-family: $Sans;
+                  font-weight: $black;
+                  font-size: 24px;
+                  stroke            : $primary-background-color;
+                  fill              : #000000;
+                  text-anchor       : middle;
+                  dominant-baseline : alphabetic;
+                }
+        
+                &:nth-child(1) {
+                  stroke-width      : 7px;
+                  paint-order       : stroke;
+                }
+        
+                &:nth-child(2) {
+                  stroke-width      : 0;
+                }
+              }
+            }
+
+            .bottom-text--pink-mark {
+              width: 30px;
+
+              svg {
+                overflow: initial;
+
+                text {
+                  font-family: $Sans;
+                  font-weight: $black;
+                  font-size: 36px;
+                  stroke            : $primary-background-color;
+                  fill              : $light-pink-font-color;
+                  text-anchor       : middle;
+                  dominant-baseline : alphabetic;
+                }
+        
+                &:nth-child(1) {
+                  stroke-width      : 7px;
+                  paint-order       : stroke;
+                }
+        
+                &:nth-child(2) {
+                  stroke-width      : 0;
+                }
+              }
+            }
+          }
 
           
           .pink-mark {
             color: $light-pink-font-color;
             font-size: 36px;
-          }
-
-          .pink {
-            color: $light-pink-font-color;
-            font-size: 36px;
-            text-shadow:
-            1px 1px #FFFCF4,-1px -1px #FFFCF4,-1px 1px  #FFFCF4,1px -1px #FFFCF4,
-            2px 1px #FFFCF4,-2px -1px #FFFCF4,-2px 1px  #FFFCF4,2px -1px #FFFCF4,
-            3px 2px 2px #FFFCF4,-3px -2px 2px #FFFCF4,-3px 2px 2px #FFFCF4,3px -2px 2px #FFFCF4,
-            4px 2px 2px  #FFFCF4,-4px -2px 2px  #FFFCF4,-4px 2px 2px #FFFCF4,4px -2px 2px #FFFCF4;
-            background: linear-gradient(transparent 80%, #F9909C 80%);
           }
         }
       }
@@ -183,26 +310,87 @@
       .seminar-content__top-content {
         background-color: $light-pink-font-color;
 
-        .seminar-content__top-content--txt {
-          font-family: $Sans;
-          font-weight: $black;
-          font-size: 24px;
-          color: #FFFFFF;
-          text-shadow: 
-          1px 1px $light-pink-font-color,-1px -1px $light-pink-font-color,-1px 1px  $light-pink-font-color,1px -1px $light-pink-font-color,
-          2px 2px $light-pink-font-color,-2px -2px $light-pink-font-color,-2px 2px  $light-pink-font-color,2px -2px $light-pink-font-color,
-          3px 3px  $light-pink-font-color,-3px -3px  $light-pink-font-color,-3px 3px  $light-pink-font-color,3px -3px  $light-pink-font-color,
-          4px 1px  $light-pink-font-color,-4px -1px  $light-pink-font-color,-4px 1px  $light-pink-font-color,4px -1px  $light-pink-font-color;
-          white-space: nowrap;
+        .seminar-content__top-content--txt-box {
 
-          .pink {
+          .seminar-content__top-content--top-text {
+            font-family: $Sans;
+            font-weight: $black;
+            color: #FFFFFF;
+            font-size: 24px;
+          }
+
+          .seminar-content__top-content--bottom-text {
+            display: flex;
+            white-space: nowrap;
+            height: 50px;
+
+            .bottom-text--large {
+              width: 150px;
+              background: linear-gradient(transparent 80%, #F9909C 80%);
+
+              svg {
+                overflow: initial;
+        
+                text {
+                  font-weight       : $black;
+                  font-size         : 36px;
+                  font-family       : $Sans;
+                  stroke            : $light-pink-font-color;
+                  fill              : #FFFFFF;
+                  text-anchor       : middle;
+                  dominant-baseline : alphabetic;
+                }
+        
+                &:nth-child(1) {
+                  stroke-width      : 7px;
+                  paint-order       : stroke;
+                }
+        
+                &:nth-child(2) {
+                  stroke-width      : 0;
+                }
+              }
+            }
+
+            .bottom-text--small{
+
+              svg {
+                overflow: initial;
+
+                text {
+                  font-family: $Sans;
+                  font-weight: $black;
+                  font-size: 24px;
+                  stroke            : $light-pink-font-color;
+                  fill              : #FFFFFF;
+                  text-anchor       : middle;
+                  dominant-baseline : alphabetic;
+                }
+        
+                &:nth-child(1) {
+                  stroke-width      : 7px;
+                  paint-order       : stroke;
+                }
+        
+                &:nth-child(2) {
+                  stroke-width      : 0;
+                }
+              }
+            }
+
+            .small-1 {
+              width: 80px;
+            }
+
+            .small-2 {
+              width: 133px;
+            }
+          }
+
+          
+          .pink-mark {
+            color: $light-pink-font-color;
             font-size: 36px;
-            text-shadow:
-            1px 1px $light-pink-font-color,-1px -1px $light-pink-font-color,-1px 1px  $light-pink-font-color,1px -1px $light-pink-font-color,
-            2px 1px $light-pink-font-color,-2px -1px $light-pink-font-color,-2px 1px  $light-pink-font-color,2px -1px $light-pink-font-color,
-            3px 2px 2px $light-pink-font-color,-3px -2px 2px $light-pink-font-color,-3px 2px 2px $light-pink-font-color,3px -2px 2px $light-pink-font-color,
-            4px 2px 2px  $light-pink-font-color,-4px -2px 2px  $light-pink-font-color,-4px 2px 2px $light-pink-font-color,4px -2px 2px $light-pink-font-color;
-            background: linear-gradient(transparent 80%, #F9909C 80%);
           }
         }
       }
