@@ -18,9 +18,15 @@
             font-weight: $bold;
             text-shadow: 4px 4px 4px #FFFCF4;
             transform: translateX(-90px);
-            text-shadow:1px 1px 0px #fffcf4, -1px -1px 0px #fffcf4, 
-            2px 2px 0px #fffcf4, -2px -2px 0px #fffcf4,
-            3px 3px 1px #fffcf4, -3px -3px 1px #fffcf4;
+            text-shadow:
+            2px 1px #fffcf4,
+            -2px  2px 1px #fffcf4,
+            2px -2px 1px #fffcf4,
+            -2px -2px 1px #fffcf4,
+            2px  0px 1px #fffcf4,
+            0px  2px 1px #fffcf4,
+            -2px  0px 1px #fffcf4,
+            0px -2px 1px #fffcf4;
     
             .pink-txt {
                 color: $pink-font-color;

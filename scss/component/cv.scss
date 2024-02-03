@@ -83,10 +83,14 @@
                     display: inline-block;
                     transform: translate(3px,9px);
                     text-shadow:
-                    1px 1px #FFFFFF,-1px -1px #FFFFFF,-1px 1px  #FFFFFF,1px -1px #FFFFFF,
-                    2px 1px #FFFFFF,-2px -1px #FFFFFF,-2px 1px  #FFFFFF,2px -1px #FFFFFF,
-                    3px 2px 2px #FFFFFF,-3px -2px 2px #FFFFFF,-3px 2px 2px #FFFFFF,3px -2px 2px #FFFFFF,
-                    4px 2px 2px  #FFFFFF,-4px -2px 2px  #FFFFFF,-4px 2px 2px #FFFFFF,4px -2px 2px #FFFFFF;
+                    2px 1px #FFFFFF,
+                    -2px  2px 1px #FFFFFF,
+                    2px -2px 1px #FFFFFF,
+                    -2px -2px 1px #FFFFFF,
+                    2px  0px 1px #FFFFFF,
+                    0px  2px 1px #FFFFFF,
+                    -2px  0px 1px #FFFFFF,
+                    0px -2px 1px #FFFFFF;
                 }
             }
             
@@ -106,10 +110,14 @@
                 .pink {
                     font-size: 32px;
                     text-shadow:
-                    1px 1px #FFFFFF,-1px -1px #FFFFFF,-1px 1px  #FFFFFF,1px -1px #FFFFFF,
-                    2px 1px #FFFFFF,-2px -1px #FFFFFF,-2px 1px  #FFFFFF,2px -1px #FFFFFF,
-                    3px 2px 2px #FFFFFF,-3px -2px 2px #FFFFFF,-3px 2px 2px #FFFFFF,3px -2px 2px #FFFFFF,
-                    4px 2px 2px  #FFFFFF,-4px -2px 2px  #FFFFFF,-4px 2px 2px #FFFFFF,4px -2px 2px #FFFFFF;
+                    2px 1px #FFFFFF,
+                    -2px  2px 1px #FFFFFF,
+                    2px -2px 1px #FFFFFF,
+                    -2px -2px 1px #FFFFFF,
+                    2px  0px 1px #FFFFFF,
+                    0px  2px 1px #FFFFFF,
+                    -2px  0px 1px #FFFFFF,
+                    0px -2px 1px #FFFFFF;
                 }
             }
 
@@ -122,15 +130,22 @@
                     font-size: 40px;
                     font-family: "impact";
                     font-weight: initial;
+                    display: inline-block;
+                    transform: translateX(8px);
                 }
 
                 .put-on-txt {
                     display: inline-block;
-                    text-shadow: 
-                    1px 1px #FFFFFF,-1px -1px #FFFFFF,-1px 1px  #FFFFFF,1px -1px #FFFFFF,
-                    2px 1px #FFFFFF,-2px -1px #FFFFFF,-2px 1px  #FFFFFF,2px -1px #FFFFFF,
-                    3px 2px  #FFFFFF,-3px -2px  #FFFFFF,-3px 2px  #FFFFFF,3px -2px  #FFFFFF;
-                    transform: translate(-4px, 4px);
+                    text-shadow:
+                    2px 1px #FFFFFF,
+                    -2px  2px 1px #FFFFFF,
+                    2px -2px 1px #FFFFFF,
+                    -2px -2px 1px #FFFFFF,
+                    2px  0px 1px #FFFFFF,
+                    0px  2px 1px #FFFFFF,
+                    -2px  0px 1px #FFFFFF,
+                    0px -2px 1px #FFFFFF;
+                    transform: translate(3px, 4px);
                 }
             }
         }

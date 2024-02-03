@@ -64,11 +64,11 @@
 
       .ttl-box__ttl--box {
 
-        .ttl-box__ttl--svg {
+        svg {
           overflow: initial;
           transform: translateY(-45px);
   
-          .ttl-box__ttl {
+          text {
             font-weight       : $bold;
             font-size         : 64px;
             font-family       : $Sans;
@@ -407,10 +407,15 @@
           .seminar-content__dtl--txt {
             font-size: 25px;
             color: $brown-font-color;
-            text-shadow: 1px 1px #fffcf4, -1px -1px #fffcf4, 
-            -1px 1px #fffcf4, 1px -1px #fffcf4, 2px 2px #fffcf4, 
-            -2px -2px #fffcf4, -2px 2px #fffcf4, 2px -2px #fffcf4, 
-            3px 2px 2px #fffcf4, -3px -2px 2px #fffcf4, -3px 2px 2px #fffcf4, 3px -2px 2px #fffcf4;
+            text-shadow:
+              2px 1px #fffcf4,
+              -2px  2px 1px #fffcf4,
+              2px -2px 1px #fffcf4,
+              -2px -2px 1px #fffcf4,
+              2px  0px 1px #fffcf4,
+              0px  2px 1px #fffcf4,
+              -2px  0px 1px #fffcf4,
+              0px -2px 1px #fffcf4;
 
             .move-right-txt {
               display: inline-block;
