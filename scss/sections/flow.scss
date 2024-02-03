@@ -1,0 +1,189 @@
+.flow {
+  background-image: url(/images/flow/bg/flow-bg.svg);
+  background-size: 100% 100%;
+  height: 1441.5px;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+
+  .left-shape {
+    width: 29vw;
+    position: absolute;
+    left: 0;
+    top: -7vw;
+
+    @include mq(wpc) {
+      top: -1vw;
+        width : 12vw;
+    }
+  }
+
+.right-shape {
+  width: 27.7vw;
+    position: absolute;
+    right: 0;
+    bottom: 20vw;
+
+    @include mq(wpc) {
+        width: 12vw;
+        bottom: 1vw;
+    }
+  }
+
+  .flow__ttl-box {
+    display: flex;
+
+    .flow__ttl-box--img {
+      position: relative;
+      z-index: 300;
+    }
+
+    .flow__ttl-box--txt-box {
+      display: flex;
+      align-items: flex-end;
+      background: linear-gradient(transparent 90%,$brown-font-color 90%);
+      padding: 0 30px;
+      border-radius: 3px;
+      transform: translate(-84px,-94px);
+
+      .ttl-box__left-txt {
+        font-family: $Hiragino;
+        font-size: 40px;
+        color: $primary-background-color;
+        margin-right: 10px;
+      }
+      
+      .ttl-box__middle-txt {
+        height: 110px;
+        width: 65px;
+
+        svg {
+
+          text {
+            font-weight       : $bold;
+            font-size         : 96px;
+            font-family       : $Rounded;
+            stroke            : $primary-background-color;
+            fill              : $light-pink-font-color;
+            text-anchor       : middle;
+            dominant-baseline : alphabetic;
+          }
+  
+          &:nth-child(1) {
+            stroke-width      : 6px;
+            paint-order       : stroke;
+            stroke-linejoin   : round ;
+          }
+  
+          &:nth-child(2) {
+            stroke-width      : 0;
+          }
+        }
+      }
+
+      .ttl-box__right-txt {
+        height: 70px;
+        width: 83px;
+
+        svg {
+
+          text {
+            font-weight       : $bold;
+            font-size         : 36px;
+            font-family       : $Rounded;
+            stroke            : $primary-background-color;
+            fill              : $light-pink-font-color;
+            text-anchor       : middle;
+            dominant-baseline : alphabetic;
+          }
+  
+          &:nth-child(1) {
+            stroke-width      : 6px;
+            paint-order       : stroke;
+            stroke-linejoin   : round ;
+          }
+  
+          &:nth-child(2) {
+            stroke-width      : 0;
+          }
+        }
+      }
+    }
+  }
+
+  .flow__content-box {
+    background-color: $primary-background-color;
+    border-radius: 20px;
+    height: 1048.5px;
+    width: 985px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 80px 20px;
+    position: relative;
+    z-index: 200;
+    transform: translateY(-55px);
+
+    .flow__content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 380px;
+      height: 395px;
+
+      .flow__content--step-num {
+        background-color: $brown-font-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        .step-num__txt {
+          font-family: $OverlockSC;
+          font-weight: $regular;
+          color: #FFFFFF;
+          font-size: 14px;
+          text-align: center;
+          line-height: 0.5;
+
+          .num {
+            font-size: 48px;
+          }
+        }
+      }
+
+      .flow__content--ttl {
+        font-family: $Sans;
+        font-weight: $bold;
+        font-size: 20px;
+        color: #000;
+        text-align: center;
+        margin: 24px 0 23px 0;
+      }
+
+      .flow__content--txt {
+        font-family: $Sans;
+        font-weight: $medium;
+        font-size: 14px;
+        color: #000;
+        text-align: center;
+      }
+    }
+  }
+
+  .section-dot {
+
+    .dot {
+      background-color: $primary-background-color;
+    }
+  }
+}

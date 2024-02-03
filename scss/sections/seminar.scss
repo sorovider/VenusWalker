@@ -39,9 +39,9 @@
       .ttl-box__ttl-note--box {
         transform: translateY(50px);
 
-        .ttl-box__ttl-note--svg {
+        svg {
 
-          .ttl-box__ttl-note {
+          text {
             font-weight       : $bold;
             font-size         : 36px;
             font-family       : $Sans;
@@ -62,7 +62,7 @@
         }
       }
 
-      .ttl-box__ttl--box {
+      .ttl-box__ttl--txt {
 
         svg {
           overflow: initial;
