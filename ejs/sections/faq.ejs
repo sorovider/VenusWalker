@@ -1,0 +1,78 @@
+<%
+const faqs = [
+    {
+        question: '電話説明会の所要時間はどれくらいですか？',
+        answer: '所要時間は90分程度頂いております。',
+    },
+    {
+        question: '電話説明会の準備、注意事項はありますか？',
+        answer: '以下をご確認ください。<br>・ご自宅など静かな場所でのご対応お願いします。<br>・スマートフォン、PC、タブレットいずれかのご準備をお願いします。<br>・スマートフォンの充電器',
+    },
+    {
+        question: '電話説明会参加にあたって必要なスキルなどはありますか？',
+        answer: 'スマートフォンの操作が出来ればOKです。特別なスキルなどは必要ございません。',
+    },
+    {
+        question: '電話説明会に参加すれば必ずお仕事は見つかりますか？',
+        answer: 'お仕事の数は常に変動しており、<br>参加時期によってはご自身がやりたいと思うモニターが見つからないケースもございます。<br>ただ、常に複数のジャンルのお仕事をご紹介させていただいているので、ご自身に適したモニターが全く見つからないということは少ないです。',
+    },
+    {
+        question: 'お仕事のたびに、電話説明会を実施する必要があるのでしょうか？',
+        answer: 'いいえ。モニターのお仕事説明やサイトの利用方法をレクチャーさせていただく目的で、<br>初回のみ説明会に参加していただきます。その後は、Webサイトやメールにてお仕事に参加していただきます。',
+    },
+    {
+        question: '月にどれくらい稼げるのでしょうか？',
+        answer: 'ご案内できるモニターのお仕事にもよりますが、多い場合は月に30,000円程度稼ぐ方もいらっしゃいます。',
+    },
+    {
+        question: '副業はOKでしょうか？源泉徴収はどうすればいいですか？',
+        answer: '副業は問題ございません。明細等も発行されず、全てヴィーナスウォーカーにて完結いたします。',
+    },
+    {
+        question: 'LINEやfacebookなどのSNSでやり取りをすることはできますか？',
+        answer: '説明会のご案内時にLINEを活用しておりますのでやり取り可能です。電話・メールでの受付も可能です。',
+    },
+    {
+        question: '電話説明会、利用時に料金はかかりますか？',
+        answer: '電話説明会の参加、会員登録は無料です。<br>尚、ご紹介の案件の中には一部体験費用が実費となる案件もあるため、予めご了承ください。',
+    },
+]
+
+%>
+
+<section class="faq">
+
+  <div class="faq__ttl-box">
+    <div class="faq__ttl-box--speech-bubble">
+      <img class="ttl-box__speech-bubble--img" src="/images/faq/ttl-speech-bubble.png.webp" width="145" height="122" alt="吹き出しのイラスト">
+      <p class="ttl-box__speech-bubble--txt">FA<span class="pink">Q</span></p>
+    </div>
+    <h2 class="faq__ttl-box--ttl">
+      <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <defs>
+          <text dy="0.4em" id="faqTtl">よくある質問</text>
+        </defs>
+        <use x="50%" y="50%" xlink:href="#faqTtl"></use>
+        <use x="50%" y="50%" xlink:href="#faqTtl"></use>
+      </svg>
+    </h2>
+    <img class="faq__ttl-box--right-img" src="/images/common/q-mark.png.webp" width="156.26" height="159.11" alt="？">
+  </div>
+
+  <div class="fqa__contents">
+    <% for (const faq of faqs) { %>
+      <div class="fqa__content">
+        <div class="fqa__content--q">
+          <p class="q__icon">Q.</p>
+          <p class="q__txt"><%- faq.question %></p>
+        </div>
+        <div class="fqa__content--a">
+          <p class="a__icon">A.</p>
+          <p class="a__txt"><%- faq.answer %></p>
+        </div>
+      </div>
+    <% } %>
+  </div>
+
+  <%- include('../components/_section-dot') -%>
+</section>

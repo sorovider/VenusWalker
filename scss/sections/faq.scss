@@ -1,0 +1,113 @@
+.faq {
+  background-color: $primary-background-color;
+  padding-bottom: 130px;
+
+  .faq__ttl-box {
+    display: flex;
+    align-items: center;
+    .faq__ttl-box--speech-bubble {
+      position: relative;
+      transform: translate(91px,0px);
+
+      .ttl-box__speech-bubble--img {
+      }
+
+      .ttl-box__speech-bubble--txt {
+        font-family: $RokunRoll;
+        font-weight: $regular;
+        font-size: 40px;
+        color: $brown-font-color;
+        position: absolute;
+        top: 41%;
+        left: 55%;    
+        transform: translate(-50%,-50%);
+        rotate: -10deg;
+
+        .pink {
+          color: $light-pink-font-color;
+        }
+      }
+    }
+
+    .faq__ttl-box--ttl {
+      background: linear-gradient(transparent 70%,#FDD23E 70%);
+      height: 55px;
+      padding: 0 70px;
+
+      svg {
+
+        text {
+          font-size         : 40px;
+          font-family       : $Hiragino;
+          stroke            : $primary-background-color;
+          fill              : $brown-font-color;
+          text-anchor       : middle;
+          dominant-baseline : alphabetic;
+        }
+
+        &:nth-child(1) {
+          stroke-width      : 6px;
+          paint-order       : stroke;
+        }
+
+        &:nth-child(2) {
+          stroke-width      : 0;
+        }
+      }
+    }
+
+    .faq__ttl-box--right-img {
+      transform: translate(-120px,-3px);
+    }
+  }
+
+  .fqa__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 56px;
+    margin-bottom: 107px;
+    width: 810px;
+
+    .fqa__content {
+      font-family: $Sans;
+      font-size: 24px;
+      font-weight: $bold;
+
+      .fqa__content--q,
+      .fqa__content--a  {
+        display: flex;
+        gap: 20px;
+      }
+
+
+      .fqa__content--q {
+        color: #FFFFFF;
+        background-color: $light-pink-font-color;
+        border-radius: 10px;
+        width: 100%;
+        padding: 30px;
+
+        .q__icon {
+
+        }
+
+        .q__txt {
+
+        }
+      }
+
+      .fqa__content--a {
+        color: $brown-font-color;
+        padding: 20px 30px 0 30px;
+
+        .a__icon {
+
+        }
+        .a__txt {
+
+        }
+      }
+    }
+  }
+}
