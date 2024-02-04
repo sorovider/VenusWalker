@@ -1,9 +1,39 @@
 <%
 const works = [
     {
+        ttl: '脱毛案件',
+        txt: '脱毛サロンへ来店し、体験コースを受けてもらうお仕事です。',
+        img: '/images/about-work/work-img-1.png.webp',
+        width: '223',
+        height: '359',
+        num: '4~5件',
+        time: '1~2時間',
+        money: '500円＋体験料1,000円'
+    },
+    {
+        ttl: 'クレジットカード案件',
+        txt: 'クレジットカードを発行し、<br>発行スピードや使い勝手をレビューしてもらうお仕事です。',
+        img: '/images/about-work/work-img-2.png.webp',
+        width: '462.51',
+        height: '350.45',
+        num: '10~20件',
+        time: '10~20分',
+        money: '2,000~5,000円'
+    },
+    {
+        ttl: '保険案件',
+        txt: '保険面談をしてもらうお仕事です。',
+        img: '/images/about-work/work-img-3.png.webp',
+        width: '313.83',
+        height: '360',
+        num: '10~20件',
+        time: '1~2時間',
+        money: '2,000~6,000円'
+    },
+    {
         ttl: '美容サプリ案件',
         txt: 'サプリを購入し、商品のレビューをしてもらうお仕事です。',
-        img: '/images/about-work/about-work-img-2.png.webp',
+        img: '/images/about-work/work-img-4.png.webp',
         width: '368',
         height: '331',
         num: '20~30件',
@@ -11,12 +41,22 @@ const works = [
         money: '500円＋商材費用'
     },
     {
-        ttl: '美容サプリ案件',
-        txt: 'サプリを購入し、商品のレビューをしてもらうお仕事です。',
-        img: '/images/about-work/about-work-img-2.png.webp',
-        width: '368',
-        height: '331',
+        ttl: 'スキンケア案件',
+        txt: 'スキンケア商品を購入し、商品のレビューをしてもらうお仕事です。',
+        img: '/images/about-work/work-img-5.png.webp',
+        width: '300',
+        height: '316',
         num: '20~30件',
+        time: '10~20分',
+        money: '500円＋商材費用'
+    },
+    {
+        ttl: 'ヘアケア案件',
+        txt: 'ヘアケア商品を購入し、商品のレビューをしてもらうお仕事です。',
+        img: '/images/about-work/work-img-6.png.webp',
+        width: '335',
+        height: '332',
+        num: '5~10件',
         time: '10~20分',
         money: '500円＋商材費用'
     },
@@ -39,42 +79,81 @@ const works = [
         <use x="50%" y="50%" xlink:href="#aboutWorkTtl"></use>
       </svg>
     </h2>
-    <img class="about-work__ttl-container--img-2" src="/images/about-work/q-mark.png.webp" width="156.26" height="159.11" alt="？">
+    <img class="about-work__ttl-container--img-2" src="/images/common/q-mark.png.webp" width="156.26" height="159.11" alt="？">
   </div>
 
-  <div class="about-work__works">
-    <% for (const work of works) { %>
-      <div class="about-work__work">
-        <div class="work__img-with-dtl">
-          <img  class="work__img-with-dtl--img" src="<%= work.img %>" width="<%= work.width %>" height="<%= work.height %>" alt="仕事のイメージ画像">
-          <div class="work__img-with-dtl--dtl-wrapper">
-            <div class="dtl-box">
-              <div class="dtl-box__pink-box">
-                <p class="dtl-box__pink-box--ttl">案件数</p>
+  <div class="about-work__works-container">
+    <div class="works__arrow-box">
+      <div class="works__arrow-box--left-arrow">
+        <img src="/images/about-work/left-arrow.png.webp" width="12" height="24" alt="左矢印">
+      </div>
+      <div class="works__arrow-box--right-arrow">
+        <img src="/images/about-work/right-arrow.png.webp" width="12" height="24" alt="右矢印">
+      </div>
+    </div>
+    <div class="about-work__works">
+      <% for (const work of works) { %>
+        <div class="about-work__work">
+          <div class="work__img-with-dtl">
+            <img  class="work__img-with-dtl--img" src="<%= work.img %>" width="<%= work.width %>" height="<%= work.height %>" alt="仕事のイメージ画像">
+            <div class="work__img-with-dtl--dtl-wrapper">
+              <div class="dtl-box">
+                <div class="dtl-box__pink-box">
+                  <p class="dtl-box__pink-box--ttl">案件数</p>
+                </div>
+                <p class="dtl-box__txt"><%= work.num %></p>
               </div>
-              <p class="dtl-box__txt"><%= work.num %></p>
-            </div>
-            <div class="dtl-box">
-              <div class="dtl-box__pink-box">
-                <p class="dtl-box__pink-box--ttl">所要時間</p>
+              <div class="dtl-box">
+                <div class="dtl-box__pink-box">
+                  <p class="dtl-box__pink-box--ttl">所要時間</p>
+                </div>
+                <p class="dtl-box__txt"><%= work.time %></p>
               </div>
-              <p class="dtl-box__txt"><%= work.time %></p>
-            </div>
-            <div class="dtl-box">
-              <div class="dtl-box__pink-box">
-                <p class="dtl-box__pink-box--ttl">謝礼金</p>
+              <div class="dtl-box">
+                <div class="dtl-box__pink-box">
+                  <p class="dtl-box__pink-box--ttl">謝礼金</p>
+                </div>
+                <p class="dtl-box__txt"><%= work.money %></p>
               </div>
-              <p class="dtl-box__txt"><%= work.money %></p>
             </div>
           </div>
+          <div class="work__ttl-with-txt-box">
+            <p class="work__ttl-with-txt-box--ttl"><%= work.ttl %></p>
+            <p class="work__ttl-with-txt-box--txt"><%- work.txt %></p>
+          </div>
         </div>
-        <div class="work__ttl-with-txt-box">
-          <p class="work__ttl-with-txt-box--ttl"><%= work.ttl %></p>
-          <p class="work__ttl-with-txt-box--txt"><%- work.txt %></p>
-        </div>
-      </div>
-    <% } %>
+      <% } %>
+    </div>
   </div>
 
-  <% include('../components/_section-dot') %>
+  <div class="about-work__bottom-txt">
+    <div class="about-work__bottom-txt--top-txt-box">
+      <p class="bottom-txt__txt">他にも</p>
+      <p class="bottom-txt__txt--large">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <defs>
+            <text  dy="0.4em" id="txtLarge1">”魅力的”</text>
+          </defs>
+          <use x="50%" y="50%" xlink:href="#txtLarge1"></use>
+          <use x="50%" y="50%" xlink:href="#txtLarge1"></use>
+        </svg>
+      </p>
+      <p class="bottom-txt__txt">な仕事が盛りだくさん</p>
+    </div>
+    <div class="about-work__bottom-txt--bottom-txt-box">
+      <p class="bottom-txt__txt">あなたに</p>
+      <p class="bottom-txt__txt--large">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <defs>
+            <text  dy="0.4em" id="txtLarge2">”ぴったり”</text>
+          </defs>
+          <use x="50%" y="50%" xlink:href="#txtLarge2"></use>
+          <use x="50%" y="50%" xlink:href="#txtLarge2"></use>
+        </svg>
+      </p>
+      <p class="bottom-txt__txt">のお仕事がきっと見つかる</p>
+    </div>
+  </div>
+
+  <%- include('../components/_section-dot') -%>
 </section>

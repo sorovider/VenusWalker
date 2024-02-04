@@ -8,11 +8,13 @@
   background-color: $accent-background-color;
   transform: translateY(-150px);
   padding-bottom: 110px;
+  align-items: initial;
 
 
   .about-work__ttl-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 150px;
 
     .about-work__ttl-container--img-1 {
@@ -57,82 +59,174 @@
     }
   }
 
-  .about-work__works {
-    display: flex;
-    margin-top: 85px;
+  .about-work__works-container {
+    overflow-x: scroll;
 
-    .about-work__work {
-      background-color: #FFFFFF;
-      padding-top: 80px;
-      padding-left: 40px;
-      border-radius: 10px;
-      width: 800px;
-      height: 440px;
-      box-sizing: border-box;
+    .works__arrow-box {
+      position: absolute;
+      top: 700px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 750px;
+      z-index: 300;
 
-      .work__img-with-dtl {
+      .works__arrow-box--right-arrow,
+      .works__arrow-box--left-arrow {
+        background-color: $brown-font-color;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
         display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
 
-        .work__img-with-dtl--img {
-          margin-top: -155px;
-        }
+    .about-work__works {
+      display: flex;
+      gap: 30px;
+      margin-top: 90px;
+      position: relative;
+  
 
-        .work__img-with-dtl--dtl-wrapper {
+      .about-work__work {
+        background-color: #FFFFFF;
+        padding-top: 80px;
+        padding-left: 30px;
+        border-radius: 10px;
+        min-width: 800px;
+        height: 440px;
+        box-sizing: border-box;
+
+  
+        .work__img-with-dtl {
           display: flex;
-          flex-direction: column;
-          gap: 15px;
-          transform: translateX(-40px);
-
-          .dtl-box {
+  
+          .work__img-with-dtl--img {
+            margin-top: -170px;
+          }
+  
+          .work__img-with-dtl--dtl-wrapper {
             display: flex;
-            gap: 20px;
-            
-            .dtl-box__pink-box {
-              background-color: $light-pink-font-color;
-              border-radius: 30px;
-              width: 102px;
-              height: 32px;
-              border: 3px solid #FFFFFF;
+            flex-direction: column;
+            gap: 15px;
+            transform: translateX(-40px);
+  
+            .dtl-box {
               display: flex;
-              align-items: center;
-              justify-content: center;
-
-              .dtl-box__pink-box--ttl {
-                color: $primary-background-color;
+              gap: 20px;
+              
+              .dtl-box__pink-box {
+                background-color: $light-pink-font-color;
+                border-radius: 30px;
+                width: 102px;
+                height: 32px;
+                border: 3px solid #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+  
+                .dtl-box__pink-box--ttl {
+                  color: $primary-background-color;
+                  font-family: $Sans;
+                  font-weight: $bold;
+                  font-size: 16px;
+                }
+              }
+  
+              .dtl-box__txt {
                 font-family: $Sans;
                 font-weight: $bold;
-                font-size: 16px;
+                font-size: 24px;
+                color: #000;
               }
-            }
-
-            .dtl-box__txt {
-              font-family: $Sans;
-              font-weight: $bold;
-              font-size: 24px;
-              color: #000;
             }
           }
         }
-      }
-
-      .work__ttl-with-txt-box {
-        padding: 20px 0 0 20px;
-
-        .work__ttl-with-txt-box--ttl {
-          font-family: $Sans;
-          font-weight: $black;
-          font-size: 36px;
-          color: #000;
-          margin-bottom: 25px;
+  
+        .work__ttl-with-txt-box {
+          padding: 20px 0 0 20px;
+  
+          .work__ttl-with-txt-box--ttl {
+            font-family: $Sans;
+            font-weight: $black;
+            font-size: 36px;
+            color: #000;
+            margin-bottom: 20px;
+          }
+  
+          .work__ttl-with-txt-box--txt  {
+            font-family: $Sans;
+            font-weight: $medium;
+            font-size: 20px;
+            color: #000;
+          }
         }
-
-        .work__ttl-with-txt-box--txt  {
-          font-family: $Sans;
-          font-weight: $medium;
-          font-size: 20px;
-          color: #000;
-        }
       }
+    }
+  }
+
+  .about-work__bottom-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    .about-work__bottom-txt--top-txt-box {
+
+      .bottom-txt__txt--large {
+        width: 180px;
+      }
+    }
+
+    .about-work__bottom-txt--bottom-txt-box {
+
+      .bottom-txt__txt--large {
+        width: 230px;
+      }
+    }
+
+    .about-work__bottom-txt--bottom-txt-box,
+    .about-work__bottom-txt--top-txt-box {
+      display: flex;
+      align-items: center;
+      
+          .bottom-txt__txt {
+            font-family: $Sans;
+            font-size: 32px;
+            font-weight: $black;
+            color: $primary-background-color;
+          }
+      
+          .bottom-txt__txt--large {
+            height: 65px;
+            margin: 0 10px;
+            background: linear-gradient(transparent 75%, $pink-font-color 75%);
+      
+            svg {
+              overflow: initial;
+      
+              text {
+                font-size         : 48px;
+                font-family       : $Sans;
+                stroke            : $accent-background-color;
+                fill              : $primary-background-color;
+                text-anchor       : middle;
+                dominant-baseline : alphabetic;
+              }
+      
+              &:nth-child(1) {
+                stroke-width      : 6px;
+                paint-order       : stroke;
+              }
+      
+              &:nth-child(2) {
+                stroke-width      : 0;
+              }
+            }
+          }
     }
   }
 }
