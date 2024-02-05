@@ -11,6 +11,11 @@
         flex-direction: column;
         align-items: center;
 
+        @include mq(tab) {
+            background-image: url(/images/main-view/sp/main-view-bg.png.webp);
+            height: 255vw;
+        }
+
         .first-view {
             width: 100%;
             position: relative;
@@ -20,6 +25,10 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 2.6vw 5.76vw 0 2.5vw;
+
+                @include mq(tab) {
+                    padding: 2.6vw 1.86vw 0 2.5vw;
+                }
     
                 .top-contents__logo-box {
                     background-image: url(/images/main-view/bg/logo-bg.svg);
@@ -27,6 +36,11 @@
                     height: 6.527vw;
                     background-size: cover;
                     position: relative;
+
+                    @include mq(tab) {
+                        width: 32.79vw;
+                        height: 10vw;
+                    }
     
                     .top-contents__logo {
                         position: absolute;
@@ -34,6 +48,10 @@
                         left: 50%;
                         transform: translate(-50%,-50%);
                         width: 19.444vw;
+
+                        @include mq(tab) {
+                            width: 30.23vw;
+                        }
                     }
                 }
     
@@ -41,6 +59,10 @@
                     display: flex;
                     align-items: center;
                     gap: 1.38vw;
+
+                    @include mq(tab) {
+                        gap: 1.86vw;
+                    }
     
                     .top-cta-btns__cta-btn--pink,
                     .top-cta-btns__cta-btn--yellow {
@@ -52,9 +74,19 @@
                         align-items: center;
                         justify-content: center;
                         gap: 0.764vw;
+
+                        @include mq(tab) {
+                            border: 0.465vw solid $brown-font-color;
+                            width: 28.139vw;
+                            height: 7.209vw;
+                        }
     
                         .cta-btn-arrow {
                             width: 0.416vw;
+
+                            @include mq(tab) {
+                                width: 0.93vw;
+                            }
                         }
     
                         .cta-btn-pink__txt, 
@@ -63,6 +95,10 @@
                             font-family: $Kiwi;
                             font-weight: $medium;
                             white-space: nowrap;
+
+                            @include mq(tab) {
+                                font-size: 2.79vw;
+                            }
                         }
                     }
     
@@ -89,12 +125,22 @@
                 justify-content: center;
                 align-items: center;
                 transform: translate(2vw, -3vw);
+
+                @include mq(tab) {
+                    transform: initial;
+                    flex-direction: column;
+                }
     
                 .left-contents {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     transform: translate(3.125vw, 6.25vw);
+
+                    @include mq(tab) {
+                        transform: initial;
+                        align-items: center;
+                    }
     
                     .left-contents__bg-yellow--txt {
                         background-color: #FCC944;
@@ -103,6 +149,13 @@
                         padding: 0.417vw 0.694vw;
                         margin-bottom: 1.181vw;
                         font-size: 1.18vw;
+
+                        @include mq(tab) {
+                            padding: 1.2vw 2.325vw;
+                            margin-bottom: 3.255vw;
+                            margin-top: 4.88vw;
+                            font-size: 2.79vw;
+                        }
                     }
     
                     .left-contents__pink--txt {
@@ -110,19 +163,39 @@
                         color: $primary-font-color;
                         font-weight: $black;
                         font-size: 1.389vw;
+
+                        @include mq(tab) {
+                            font-size: 3.72vw;
+                            transform: translateX(-9.302vw);
+                        }
     
                         .pink {
                             color: $pink-font-color;
                             font-size: 2.222vw;
+
+                            @include mq(tab) {
+                                font-size: 5.58vw;
+                            }
                         }
                     }
     
                     .left-contents__fv-title {
                         transform: translateX(-1.04vw);
                         margin: -1.944vw 0 -2.5vw 0;
+
+                        @include mq(tab) {
+                            transform: inherit;
+                            margin: initial;
+                        }
     
                         .fv-title__img {
                             width: 35.972vw;
+
+                            @include mq(tab) {
+                                width: 85.348vw;
+                                margin-top: -5.813vw;
+                                transform: translateX(3.02vw);
+                            }
                         }
                     }
     
@@ -131,6 +204,12 @@
                         padding: 0;
                         gap: 1.667vw;
                         margin-bottom: 1.667vw;
+
+                        @include mq(tab) {
+                            gap: 2.79vw;
+                            margin-bottom: 7.67vw;
+                            margin-top: 0;
+                        }
     
                         .circle-content {
                             background-color: #FFFFFF;
@@ -142,6 +221,12 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+
+                            @include mq(tab) {
+                                width: 27.9vw;
+                                height: 27.9vw;
+                                filter: drop-shadow(0 0.9vw 0.2vw rgba(0, 0, 0, .1450980392));
+                            }
     
                             .circle-content__txt {
                                 color: $primary-font-color;
@@ -161,6 +246,11 @@
                                 line-height: 0.7;
                                 text-align: left;
                                 margin-left: 0.694vw;
+
+                                @include mq(tab) {
+                                    font-size: 5.076vw;
+                                    transform: translateX(0.69vw);
+                                }
                                 
                                 .pink {
                                     font-size: 2.778vw;
@@ -175,6 +265,11 @@
                                     0px  2px 1px #FFFFFF,
                                     -2px  0px 1px #FFFFFF,
                                     0px -2px 1px #FFFFFF;
+
+                                    @include mq(tab) {
+                                        font-size: 8.46vw;
+                                        transform: translate(0.138vw,1.625vw);
+                                    }
                                 }
                             }
                             
@@ -183,9 +278,17 @@
                                 font-weight: $bold;
                                 font-size: 1.063vw;
                                 line-height: 1.3;
+
+                                @include mq(tab) {
+                                    font-size: 3.23vw;
+                                }
                                 
                                 .pink {
                                     font-size: 2.657vw;
+
+                                    @include mq(tab) {
+                                        font-size: 8.095vw;
+                                    }
                                 }
                             }
     
@@ -193,16 +296,28 @@
                                 font-family: $Hiragino;
                                 font-size: 1.063vw;
                                 line-height: 1.3;
+
+                                @include mq(tab) {
+                                    font-size: 3.237vw;
+                                }
     
                                 .pink {
                                     font-size: 2.5vw;
                                     font-family: "impact";
                                     font-weight: initial;
+
+                                    @include mq(tab) {
+                                        font-size: 7.61vw;
+                                    }
                                 }
     
                                 .put-on-txt {
                                     display: inline-block;
                                     transform: translate(-0.277vw, 0.277vw);
+                                    
+                                    @include mq(tab) {
+                                        transform: translate(-1vw,0.277vw);
+                                    }
                                 }
                             }
                         }
@@ -212,6 +327,10 @@
                         display: flex;
                         align-items: center;
                         gap: 2.083vw;
+
+                        @include mq(tab) {
+                            gap: 1.6279vw;
+                        }
         
                         .bottom-cta-btns__cta-btn--pink,
                         .bottom-cta-btns__cta-btn--yellow {
@@ -222,9 +341,19 @@
                             align-items: center;
                             justify-content: center;
                             gap: 1.736vw;
+
+                            @include mq(tab) {
+                                width: 46.74vw;
+                                height: 14.18vw;
+                                gap: 1.627vw;
+                            }
     
                             .cta-btn-arrow {
                                 width: 0.416vw;
+
+                                @include mq(tab) {
+                                    width: 1.395vw;
+                                }
                             }
         
                             .cta-btn-pink__txt, 
@@ -233,12 +362,20 @@
                                 font-family: $Kiwi;
                                 font-weight: $medium;
                                 white-space: nowrap;
+
+                                @include mq(tab) {
+                                    font-size: 4.65vw;
+                                }
                             }
                         }
         
                         .bottom-cta-btns__cta-btn--pink {
                             background-color: #F653A2;
                             border: 0.208vw solid $brown-font-color;
+
+                            @include mq(tab) {
+                                border: 0.697vw solid $brown-font-color;
+                            }
         
                             .cta-btn-pink__txt {
                                 color: $white-font-color;
@@ -248,7 +385,11 @@
                         .bottom-cta-btns__cta-btn--yellow {
                             background-color: #FCC944;
                             border: 0.208vw solid #000;
-        
+
+                            @include mq(tab) {
+                                border: 0.697vw solid #000;
+                            }
+                            
                             .cta-btn-yellow__txt {
                                 color: $primary-font-color;
                             }
@@ -270,6 +411,11 @@
                         display: flex;
                         align-items: center;
                         transform: translate(6.94vw, 2.569vw);
+
+                        @include mq(tab) {
+                            transform: initial;
+                            margin: -40px 0 -43px 0;
+                        }
     
                         .sppech-bubble__left,
                         .sppech-bubble__middle,
@@ -278,14 +424,26 @@
     
                             .sppech-bubble-left__img {
                                 width: 11.597vw;
+
+                                @include mq(tab) {
+                                    width: 27.2vw;
+                                }
                             }
     
                             .sppech-bubble-middle__img {
                                 width: 16.493vw;
+
+                                @include mq(tab) {
+                                    width: 38.837vw;
+                                }
                             }
     
                             .sppech-bubble-right__img {
                                 width: 16.284vw;
+
+                                @include mq(tab) {
+                                    width: 38.37vw;
+                                }
                             }
     
                             .sppech-bubble__txt {
@@ -295,11 +453,19 @@
                                 color: $primary-font-color;
                                 font-size: 1.667vw;;
                                 white-space: nowrap;
+
+                                @include mq(tab) {
+                                    font-size: 3.25vw;
+                                }
                             }
                         }
     
                         .sppech-bubble__left {
                             transform: translate(0.694vw, 3.263vw);
+
+                            @include mq(tab) {
+                                transform: translate(15vw, 2vw);
+                            }
     
                             .sppech-bubble__txt {
                                 top: 39%;
@@ -309,6 +475,11 @@
                         }
     
                         .sppech-bubble__middle {
+
+                            @include mq(tab) {
+                                transform: translateX(8.1395vw);
+                                z-index: 100;
+                            }
     
                             .sppech-bubble__txt {
                                 top: 48%;
@@ -319,6 +490,10 @@
     
                         .sppech-bubble__right {
                             transform: translate(-2.013vw, 3.472vw);
+
+                            @include mq(tab) {
+                                transform: translate(-5vw, 2vw);
+                            }
     
                             .sppech-bubble__txt {
                                 top: 49%;
@@ -330,6 +505,10 @@
     
                     .right-contents__fv-img {
                         width: 60vw;
+
+                        @include mq(tab) {
+                            width: 117vw;
+                        }
                     }
                 }
             }
@@ -338,6 +517,16 @@
         .intro__top-txt {
             margin-top: 2vw;
             width: 22vw;
+
+            @include mq(tab) {
+                width: 50vw;
+                margin-top: 10vw;
+            }
+
+            @include mq(sp) {
+                margin-top: 8.83vw;
+                width: 93vw;
+            }
         }
     }
 
@@ -350,11 +539,20 @@
         text-align: center;
         margin-top: 46px;
 
+        @include mq(tab) {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
         .pink-num {
             font-family: $Din;
             font-weight: $bold;
             color: $pink-font-color;
             font-size: 55.53px;
+
+            @include mq(tab) {
+                font-size: 36px;
+            }
         }
     }
 }
