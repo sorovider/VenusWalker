@@ -12,6 +12,7 @@
     @include mq(tab) {
         background-image: url(/images/recommend/sp/bg.svg);
         justify-content: center;
+        margin-bottom: 0;
     }
 
     .left-shape {

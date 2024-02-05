@@ -10,6 +10,11 @@
         @include mq(wpc) {
             width: 11vw;
         }
+
+        @include mq(tab) {
+            width: 200px;
+            left: -60px;
+        }
     }
 
     .bottom-left-shape {
@@ -20,6 +25,12 @@
 
         @include mq(wpc) {
             width: 11vw;
+        }
+
+        @include mq(tab) {
+            width: 190px;
+            left: -40px;
+            bottom: -70px;
         }
     }
 
@@ -32,6 +43,11 @@
         @include mq(wpc) {
             width: 11vw;
         }
+
+        @include mq(tab) {
+            width: 200px;
+            bottom: 39.5%;
+        }
     }
 
     .reasons__ttl-with-img {
@@ -40,8 +56,27 @@
         margin-top: 67px;
         transform: translateX(-50px);
 
+        @include mq(tab) {
+            transform: initial;
+            margin-top: 35px;
+        }
+
         .reasons__ttl-with-img--ttl {
             transform: translate(30px, 90px);
+
+            @include mq(tab) {
+                width: 45.11vw;
+                max-width: 195px;
+                transform: translateY(30px);
+            }
+        }
+
+        .reasons__ttl-with-img--img {
+
+            @include mq(tab) {
+                width: 47.9vw;
+                max-width: 206px;
+            }
         }
     }
 
@@ -54,10 +89,19 @@
         margin-top: -30px;
         width: 1100px;
 
+        @include mq(tab) {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 69px;
+            gap: 95px;
+            margin-top: 80px;
+            width: initial;
+        }
+
         .point {
             border: 6px solid $brown-font-color;
             border-radius: 10px;
-            box-shadow: 8px 8px #FCC944;
+            box-shadow: 10px 10px #FCC944;
             background-color: #ffffff;
             width: 480px;
             height: 440px;
@@ -66,6 +110,12 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-end;
+
+            @include mq(tab) {
+                width: 88vw;
+                max-width: 380px;
+                max-height: 400px;
+            }
 
             .point__ttl {
                 font-family: $Gugi;
@@ -118,6 +168,10 @@
                     2px -2px 2px #fff, -2px 2px 2px #fff, ;
                 background: linear-gradient(transparent 80%, #D9D9D9 80%);
                 padding: 0 7px;
+
+                @include mq(tab) {
+                    font-size: 24px;
+                }
             }
 
             .point__dtl {
@@ -130,6 +184,12 @@
                 text-align: center;
                 margin: 26px 0 52px 0;
                 line-height: 1.8;
+
+                @include mq(tab) {
+                    font-size: 14px;
+                    width: 310px;
+                    margin-top: 28px;
+                }
             }
         }
 
@@ -137,10 +197,18 @@
 
             .point__icon {
                 margin-bottom: 37px;
+
+                @include mq(tab) {
+                    margin-bottom: 32px;
+                }
             }
 
             .point__txt {
                 padding: 0 25px;
+
+                @include mq(tab) {
+                    padding: 0 7px;
+                }
             }
         }
 
@@ -148,6 +216,10 @@
 
             .point__icon {
                 margin-bottom: 12px;
+
+                @include mq(tab) {
+                    margin-bottom: 18px;
+                }
             }
         }
 
@@ -155,6 +227,10 @@
 
             .point__icon {
                 margin-bottom: 35px;
+
+                @include mq(tab) {
+                    margin-bottom: 30px;
+                }
             }
         }
 
@@ -162,6 +238,10 @@
 
             .point__icon {
                 margin-bottom:43px;
+
+                @include mq(tab) {
+                    margin-bottom: 23px;
+                }
             }
         }
     }
