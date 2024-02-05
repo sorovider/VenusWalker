@@ -520,6 +520,7 @@
 
             @include mq(tab) {
                 width: 50vw;
+                max-width: 400px;
                 margin-top: 10vw;
             }
 

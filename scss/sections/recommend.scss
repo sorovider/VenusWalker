@@ -9,6 +9,11 @@
     margin-top: 68px;
     margin-bottom: 70px;
 
+    @include mq(tab) {
+        background-image: url(/images/recommend/sp/bg.svg);
+        justify-content: center;
+    }
+
     .left-shape {
         width: 16.319vw;
         position: absolute;
@@ -17,6 +22,12 @@
 
         @include mq(wpc) {
             width : 11vw;
+        }
+
+        @include mq(tab) {
+            width: 222px;
+            top: -100px;
+            left: -10px;
         }
     }
 
@@ -29,6 +40,12 @@
         @include mq(wpc) {
             width: 12vw;
         }
+
+        @include mq(tab) {
+            width: 222px;
+            right: -61px;
+            bottom: -41px;
+        }
     }
 
     .recommend-contents {
@@ -37,7 +54,16 @@
         align-items: center;
         position: relative;
 
-        .recommend-contents__top-speech-bubbles {
+        .recommend-contents__middle-txt {
+
+            @include mq(tab) {
+                width: 93vw;
+                max-width: 400px;
+                margin-bottom: 38px;
+            }
+        }
+
+        .recommend-contents__pc-top-speech-bubbles {
             display: flex;
 
             .top-speech-bubbles__speech-bubble-1 {
@@ -58,7 +84,7 @@
             }
         }
 
-        .recommend-contents__bottom-speech-bubbles {
+        .recommend-contents__pc-bottom-speech-bubbles {
             display: flex;
             flex-direction: row-reverse;
 
@@ -80,6 +106,9 @@
                 transform: translate(65px, 0px);
             }
         }
+
+        .recommend-contents__pc-top-speech-bubbles,
+        .recommend-contents__pc-bottom-speech-bubbles {
 
         .top-speech-bubbles__speech-bubble-1,
         .top-speech-bubbles__speech-bubble-2,
@@ -145,6 +174,147 @@
                 white-space: nowrap;
                 text-align: center;
             }
+        }
+        }
+
+
+
+        .recommend-contents__tab-speech-bubbles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .recommend-contents__tab-top-speech-bubbles {
+                z-index: 300;
+            }
+
+            .recommend-contents__tab-middle-speech-bubbles {
+                margin: -33px 0 -47px 0;
+                z-index: 200;
+            }
+            .recommend-contents__tab-top-speech-bubbles,
+            .recommend-contents__tab-middle-speech-bubbles,
+            .recommend-contents__tab-bottom-speech-bubbles {
+            display: flex;
+
+                .tab-top-speech-bubbles__speech-bubble-1,
+                .tab-top-speech-bubbles__speech-bubble-2,
+                .tab-middle-speech-bubbles__speech-bubble-1,
+                .tab-middle-speech-bubbles__speech-bubble-2,
+                .tab-middle-speech-bubbles__speech-bubble-3,
+                .tab-bottom-speech-bubbles__speech-bubble-1,
+                .tab-bottom-speech-bubbles__speech-bubble-2,
+                .tab-bottom-speech-bubbles__speech-bubble-3 {
+                    position: relative;
+
+                    .tab-top-speech-bubbles__speech-bubble-1--img {
+                        width: 174.24px;
+                    
+                    }
+                    .tab-top-speech-bubbles__speech-bubble-2--img {
+                        width: 198.39px;
+                        rotate: -90deg;
+                    }
+                    .tab-middle-speech-bubbles__speech-bubble-1--img {
+                        width: 194.87px;
+                    }
+                    .tab-middle-speech-bubbles__speech-bubble-2--img {
+                        width: 199.56px;
+                        rotate: -90deg;
+                    }
+                    .tab-middle-speech-bubbles__speech-bubble-3--img {
+                        width: 193.69px;
+                        rotate: 90deg;
+
+                    }
+                    .tab-bottom-speech-bubbles__speech-bubble-1--img {
+                        width: 192.52px;
+                    }
+                    .tab-bottom-speech-bubbles__speech-bubble-2--img {
+                        width: 180.78px;
+                    }
+                    .tab-bottom-speech-bubbles__speech-bubble-3--img {
+                        width: 193.69px;
+                        rotate: 90deg;
+                    }
+
+                    .tab-top-speech-bubbles__speech-bubble-1--txt,
+                    .tab-top-speech-bubbles__speech-bubble-2--txt,
+                    .tab-middle-speech-bubbles__speech-bubble-1--txt,
+                    .tab-middle-speech-bubbles__speech-bubble-2--txt,
+                    .tab-middle-speech-bubbles__speech-bubble-3--txt,
+                    .tab-bottom-speech-bubbles__speech-bubble-1--txt,
+                    .tab-bottom-speech-bubbles__speech-bubble-2--txt,
+                    .tab-bottom-speech-bubbles__speech-bubble-3--txt {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-family: $Hiragino;
+                        font-size: 18.78px;
+                        color: $brown-font-color;
+                        letter-spacing: -0.1em;
+                        white-space: nowrap;
+                        text-align: center;
+                    }
+                }
+
+                .tab-top-speech-bubbles__speech-bubble-1 {
+                    transform: translate(13px,-11px);
+                }
+                .tab-top-speech-bubbles__speech-bubble-2 {
+                    transform: translateX(-18px);
+
+                    .tab-top-speech-bubbles__speech-bubble-2--txt {
+                        top: 40%;
+                    }
+                }
+                .tab-middle-speech-bubbles__speech-bubble-1 {
+                    transform: translate(53px,-28px);
+                }
+                .tab-middle-speech-bubbles__speech-bubble-2 {
+
+                    .tab-middle-speech-bubbles__speech-bubble-2--txt {
+                        top: 45%;
+                    }
+                }
+                .tab-middle-speech-bubbles__speech-bubble-3 {
+                    transform: translate(-52px,-10px);
+                }
+                .tab-bottom-speech-bubbles__speech-bubble-1 {
+                        transform: translate(53px,-10px);
+
+                    .tab-bottom-speech-bubbles__speech-bubble-1--txt {
+                        top: 45%;
+                    }
+                }
+                .tab-bottom-speech-bubbles__speech-bubble-2 {
+
+                    .tab-bottom-speech-bubbles__speech-bubble-2--txt {
+                        top: 45%;
+                        left: 47%;
+                    }
+                }
+                .tab-bottom-speech-bubbles__speech-bubble-3 {
+                        transform: translate(-37px,-10px);
+
+                    .tab-bottom-speech-bubbles__speech-bubble-3--txt {
+                        left: 45%;
+                    }
+                }
+            }
+
+            .recommend-contents__tab-top-speech-bubbles {
+
+            }
+
+            .recommend-contents__tab-middle-speech-bubbles {
+            }
+
+            .recommend-contents__tab-bottom-speech-bubbles {
+                transform: translateX(-10px);
+            }
+
         }
     }
 }
