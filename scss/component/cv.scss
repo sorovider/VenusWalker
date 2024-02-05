@@ -9,7 +9,13 @@
   margin-top: 70px;
   z-index: 100;
 
-  .left-shape {
+  @include mq(tab) {
+    background-image: url(/images/cv/sp/bg.svg);
+    height:516px;
+    margin-top: 45px;
+  }
+
+  .left-shape-pc {
     width: 18.47vw;
     position: absolute;
     left: 0;
@@ -20,7 +26,7 @@
     }
   }
 
-.right-shape {
+.right-shape-pc {
     width: 18.19vw;
     position: absolute;
     right: 0;
@@ -31,11 +37,39 @@
     }
   }
 
+  .left-shape-tab {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+  }
+
+  .right-shape-tab {
+    position: absolute;
+    right: 0;
+    top: -65px;
+  }
+
   .cv-contents {
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(-26px);
+
+    @include mq(tab) {
+      position: relative;
+      align-items: flex-end;
+      padding-bottom: 100px;
+      width: 100%;
+    }
+
+    .cv-contents__img {
+      @include mq(tab) {
+        position: absolute;
+        width: 156px;
+        top: 71px;
+        left: 24px;
+      }
+    }
 
     .cv-contents__dtl {
       display: flex;
@@ -48,6 +82,11 @@
         gap: 22px;
         margin: 0;
 
+        @include mq(tab) {
+          gap: 0;
+          transform: translateX(34px);
+        }
+
         .circle-content {
             background-color: #FFFFFF;
             list-style: none;
@@ -58,6 +97,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mq(tab) {
+              width: 105px;
+              height: 105px;
+              margin-right: -7px;
+            }
 
             .circle-content__txt {
                 color: $primary-font-color;
@@ -77,6 +122,10 @@
                 line-height: 0.7;
                 text-align: left;
                 margin-left: 3px;
+
+                @include mq(tab) {
+                  font-size: 19px;
+                }
                 
                 .pink {
                     font-size: 36.23px;
@@ -91,6 +140,11 @@
                     0px  2px 1px #FFFFFF,
                     -2px  0px 1px #FFFFFF,
                     0px -2px 1px #FFFFFF;
+
+                    @include mq(tab) {
+                      font-size: 31.79px;
+                      transform: translate(2px,6px);
+                    }
                 }
             }
             
@@ -101,6 +155,10 @@
                 line-height: 1.3;
                 text-align: left;
                 margin-left: 7px;
+
+                @include mq(tab) {
+                  font-size: 14px;
+                }
 
                 .black {
                   display: inline-block;
@@ -118,6 +176,17 @@
                     0px  2px 1px #FFFFFF,
                     -2px  0px 1px #FFFFFF,
                     0px -2px 1px #FFFFFF;
+
+                    @include mq(tab) {
+                      font-size: 28px;
+                    }
+                }
+
+                .small {
+
+                  @include mq(tab) {
+                    font-size: 24.5px;
+                  }
                 }
             }
 
@@ -126,12 +195,20 @@
                 font-size: 16px;
                 line-height: 1.3;
 
+                @include mq(tab) {
+                  font-size: 14px;
+                }
+
                 .pink {
                     font-size: 40px;
                     font-family: "impact";
                     font-weight: initial;
                     display: inline-block;
                     transform: translateX(8px);
+
+                    @include mq(tab) {
+                      font-size: 35px;
+                    }
                 }
 
                 .put-on-txt {
@@ -146,40 +223,72 @@
                     -2px  0px 1px #FFFFFF,
                     0px -2px 1px #FFFFFF;
                     transform: translate(3px, 4px);
+
+                    @include mq(tab) {
+                      transform: translate(0px,4px);
+                    }
                 }
             }
         }
       }
 
-      .cv-contents__dtl--txt {
-        font-family: $Hiragino;
-        font-size: 24px;
-        color: $brown-font-color;
-        text-align: center;
-        margin: 20px 0;
-      }
+      .cv-contents__dtl--txt-with-btn {
 
-      .cv-contents__dtl--btn {
-        display: flex;
-        align-items: center;
-        gap: 52px;
-        justify-content: center;
-        background-color: #F653A2;
-        border-radius: 175.4px;
-        border: 6px solid $brown-font-color;
-        width: 504px;
-        height: 83px;
-
-        .cv-btn__txt {
-          font-family: $Kiwi;
-          font-weight: $medium;
-          font-size: 35px;
-          color: #FFFFFF;
-          letter-spacing: -0.1em;
+        @include mq(tab) {
+          position: relative;
+          z-index: 200;
         }
 
-        .cta-btn__arrow {
-          width: 12px;
+        .cv-contents__dtl--txt {
+          font-family: $Hiragino;
+          font-size: 24px;
+          color: $brown-font-color;
+          text-align: center;
+          margin: 20px 0;
+
+          @include mq(tab) {
+          font-size: 20px;
+          }
+        }
+  
+        .cv-contents__dtl--btn {
+          display: flex;
+          align-items: center;
+          gap: 52px;
+          justify-content: center;
+          background-color: #F653A2;
+          border-radius: 175.4px;
+          border: 6px solid $brown-font-color;
+          width: 504px;
+          height: 83px;
+
+          @include mq(tab) {
+            width: 88vw;
+            max-width: 378px;
+            height: 72px;
+            border: 4px solid $brown-font-color;
+            gap: 30px;
+          }
+  
+          .cv-btn__txt {
+            font-family: $Kiwi;
+            font-weight: $medium;
+            font-size: 35px;
+            color: #FFFFFF;
+            letter-spacing: -0.1em;
+
+            @include mq(tab) {
+            font-size: 24px;
+            }
+          }
+  
+          .cta-btn__arrow {
+            width: 12px;
+
+            @include mq(tab) {
+              width: 9px;
+            }
+          }
         }
       }
     }

@@ -200,6 +200,7 @@
 
                 @include mq(tab) {
                     margin-bottom: 32px;
+                    width: 100px;
                 }
             }
 
@@ -219,6 +220,7 @@
 
                 @include mq(tab) {
                     margin-bottom: 18px;
+                    width: 129px;
                 }
             }
         }
@@ -230,6 +232,7 @@
 
                 @include mq(tab) {
                     margin-bottom: 30px;
+                    width: 110px;
                 }
             }
         }
@@ -241,6 +244,7 @@
 
                 @include mq(tab) {
                     margin-bottom: 23px;
+                    width: 110px;
                 }
             }
         }
