@@ -9,5 +9,10 @@
         height: 20px;
         background-color: $brown-font-color;
         border-radius: 50%;
+
+        @include mq(tab) {
+            width: 14px;
+            height: 14px;
+        }
     }
 }

@@ -1,13 +1,27 @@
 .about {
-    margin-top: 68px;
+    padding-top: 68px;
+    padding-bottom: 87px;
+
+    @include mq(tab) {
+        padding-top: 65px;
+        padding-bottom: 58px;
+    }
 
     .about-box {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-bottom: 87px;
+
+        @include mq(tab) {
+            flex-direction: column-reverse;
+            gap: 18px;
+        }
 
         .about-img {
+
+            @include mq(tab) {
+                width: 100vw;
+            }
     
         }
     
@@ -27,6 +41,11 @@
             0px  2px 1px #fffcf4,
             -2px  0px 1px #fffcf4,
             0px -2px 1px #fffcf4;
+
+            @include mq(tab) {
+                transform: initial;
+                white-space: nowrap;
+            }
     
             .pink-txt {
                 color: $pink-font-color;
@@ -35,6 +54,10 @@
             .about-txt-container__about-ttl {
                 font-size: 32px;
                 margin-bottom: 52px;
+
+                @include mq(tab) {
+                    margin-bottom: 49px;
+                }
     
                 .pink-txt {
                     font-weight: $black;
@@ -49,6 +72,11 @@
                 .pink-txt {
                     font-size: 20px;
                     line-height: 1.5;
+                }
+
+                .pink-small {
+                    color: $pink-font-color;
+                    font-size: 16px;
                 }
             }
         }
