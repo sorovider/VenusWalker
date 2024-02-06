@@ -13,6 +13,9 @@
     background-image: url(/images/cv/sp/bg.svg);
     height:516px;
     margin-top: 45px;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 25px;
   }
 
   .left-shape-pc {
@@ -41,6 +44,10 @@
     position: absolute;
     left: 0;
     bottom: 40px;
+
+    @include mq(tab) {
+      bottom: 91px;
+    }
   }
 
   .right-shape-tab {
@@ -58,7 +65,7 @@
     @include mq(tab) {
       position: relative;
       align-items: flex-end;
-      padding-bottom: 100px;
+      padding-bottom: 80px;
       width: 100%;
     }
 
@@ -66,7 +73,7 @@
       @include mq(tab) {
         position: absolute;
         width: 156px;
-        top: 71px;
+        top: -56px;
         left: 24px;
       }
     }
@@ -292,5 +299,30 @@
         }
       }
     }
+  }
+}
+
+.last-cv {
+
+  .cv-dot {
+    display: none;
+  }
+
+  .cv-contents {
+    padding-bottom: 65px;
+
+    .cv-contents__dtl {
+
+      .cv-contents__dtl--txt-with-btn {
+        
+        .cv-contents__dtl--txt {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .left-shape-tab {
+    bottom: -40px;
   }
 }

@@ -85,7 +85,9 @@
     <%- include('sections/about-work.ejs') %>
     <%- include('sections/flow.ejs') %>
     <%- include('sections/faq.ejs') %>
-    <%- include('components/cv.ejs') %>
+    <div class="last-cv">
+        <%- include('components/cv.ejs') %>
+    </div>
     <%- include('sections/footer.ejs') %>
     
     <script src="js/main.js?<%= timestamp %>"></script>

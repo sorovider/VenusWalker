@@ -6,4 +6,8 @@ footer {
   padding-bottom: 40px;
   height: 300px;
   margin-top: -200px;
+
+  @include mq(tab) {
+    height: 280px;
+  }
 }
