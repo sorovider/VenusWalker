@@ -305,24 +305,36 @@
 .last-cv {
 
   .cv-dot {
-    display: none;
+
+    @include mq(tab) {
+      display: none;
+    }
   }
 
   .cv-contents {
-    padding-bottom: 65px;
+
+    @include mq(tab) {
+      padding-bottom: 65px;
+    }
 
     .cv-contents__dtl {
 
       .cv-contents__dtl--txt-with-btn {
         
         .cv-contents__dtl--txt {
-          margin-top: 30px;
+
+          @include mq(tab) {
+            margin-top: 30px;
+          }
         }
       }
     }
   }
 
   .left-shape-tab {
-    bottom: -40px;
+
+    @include mq(tab) {
+      bottom: -40px;
+    }
   }
 }
