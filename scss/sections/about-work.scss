@@ -2,6 +2,10 @@
   position: relative;
   z-index: 200;
   transform: translateY(-20px);
+  
+  @include mq(tab) {
+    transform: translateY(-35px);
+  }
 }
 
 .about-work {
@@ -9,7 +13,6 @@
   transform: translateY(-150px);
   padding-bottom: 110px;
   align-items: initial;
-
 
   .about-work__ttl-container {
     display: flex;
@@ -21,12 +24,23 @@
       position: relative;
       z-index: 100;
       transform: translateX(70px);
+
+      @include mq(tab) {
+        transform: translateX(10px);
+        width: 68px;
+      }
     }
     
     .about-work__ttl-container--img-2 {
       position: relative;
       z-index: 100;
       transform: translate(-115px,15px);
+
+      @include mq(tab) {
+        transform: translateY(32px);
+        width: 110px;
+        margin-left: -35px;
+      }
     }
 
     .about-work__ttl-container--ttl {
@@ -34,6 +48,14 @@
       height: 65px;
       background: linear-gradient(transparent 70%,#fffcf4 70%);
       transform: translateY(15px);
+      
+      @include mq(tab) {
+        width: 230px;
+        height: 50px;
+        background: linear-gradient(transparent 60%,#fffcf4 60%);
+        position: relative;
+        z-index: 100;
+      }
 
       svg {
         overflow: initial;
@@ -45,11 +67,19 @@
           fill              : $brown-font-color;
           text-anchor       : middle;
           dominant-baseline : alphabetic;
+
+          @include mq(tab) {
+            font-size: 36px;
+          }
         }
 
         &:nth-child(1) {
           stroke-width      : 5px;
           paint-order       : stroke;
+
+          @include mq(tab) {
+            stroke-width: 4px;
+          }
         }
 
         &:nth-child(2) {
@@ -62,6 +92,10 @@
   .about-work__works-container {
     overflow-x: scroll;
 
+    @include mq(tab) {
+      padding-top: 85px;
+    }
+
     .works__arrow-box {
       position: absolute;
       top: 700px;
@@ -70,6 +104,11 @@
       display: flex;
       gap: 750px;
       z-index: 300;
+
+      @include mq(tab) {
+        gap: 217px;
+        top: 530px;
+      }
 
       .works__arrow-box--right-arrow,
       .works__arrow-box--left-arrow {
@@ -88,6 +127,10 @@
       gap: 30px;
       margin-top: 90px;
       position: relative;
+
+      @include mq(tab) {
+        margin-top: 23px;
+      }
   
 
       .about-work__work {
@@ -99,12 +142,32 @@
         height: 440px;
         box-sizing: border-box;
 
+        @include mq(tab) {
+          padding-top: 0;
+          padding-left: 0;
+          min-width: 240px;
+          height: 350px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
   
         .work__img-with-dtl {
           display: flex;
+
+          @include mq(tab) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
   
           .work__img-with-dtl--img {
             margin-top: -170px;
+
+            @include mq(tab) {
+              margin-top: -58px;
+            }
           }
   
           .work__img-with-dtl--dtl-wrapper {
@@ -112,10 +175,21 @@
             flex-direction: column;
             gap: 15px;
             transform: translateX(-40px);
+
+            @include mq(tab) {
+              gap: 0;
+              transform: initial;
+              position: absolute;
+              bottom: 19px;
+            }
   
             .dtl-box {
               display: flex;
               gap: 20px;
+
+              @include mq(tab) {
+                gap: 10px;
+              }
               
               .dtl-box__pink-box {
                 background-color: $light-pink-font-color;
@@ -126,12 +200,21 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mq(tab) {
+                  width: 58px;
+                  height: 20px;
+                }
   
                 .dtl-box__pink-box--ttl {
                   color: $primary-background-color;
                   font-family: $Sans;
                   font-weight: $bold;
                   font-size: 16px;
+
+                  @include mq(tab) {
+                    font-size: 10px;
+                  }
                 }
               }
   
@@ -140,6 +223,11 @@
                 font-weight: $bold;
                 font-size: 24px;
                 color: #000;
+
+                @include mq(tab) {
+                  font-size: 12px;
+                  white-space: nowrap;
+                }
               }
             }
           }
@@ -147,6 +235,11 @@
   
         .work__ttl-with-txt-box {
           padding: 20px 0 0 20px;
+
+          @include mq(tab) {
+            padding: initial;
+            padding-top: 12px;
+          }
   
           .work__ttl-with-txt-box--ttl {
             font-family: $Sans;
@@ -154,6 +247,12 @@
             font-size: 36px;
             color: #000;
             margin-bottom: 20px;
+
+            @include mq(tab) {
+              font-size: 20px;
+              margin-bottom: 12px;
+              text-align: center;
+            }
           }
   
           .work__ttl-with-txt-box--txt  {
@@ -161,6 +260,11 @@
             font-weight: $medium;
             font-size: 20px;
             color: #000;
+
+            @include mq(tab) {
+              font-size: 12px;
+              width: 200px;
+            }
           }
         }
       }
@@ -174,10 +278,36 @@
     margin-top: 80px;
     margin-bottom: 50px;
 
+    @include mq(tab) {
+      gap: 15px;
+      margin-top: 60px;
+    }
+
+    .bottom-txt__txt {
+      
+      @include mq(tab) {
+        font-family: $Sans;
+        font-size: 24px;
+        font-weight: $black;
+        color: $primary-background-color;
+        position: relative;
+        z-index: 200;
+        margin: 0 -5px ;
+        text-shadow: 2px 1px $accent-background-color, -2px 2px 1px $accent-background-color, 
+                    2px -2px 1px $accent-background-color, -2px -2px 1px $accent-background-color, 
+                    2px 0 1px $accent-background-color, 0 2px 1px $accent-background-color, 
+                    -2px 0 1px $accent-background-color, 0 -2px 1px $accent-background-color;
+      }
+    }
+
     .about-work__bottom-txt--top-txt-box {
 
       .bottom-txt__txt--large {
         width: 180px;
+
+        @include mq(tab) {
+          width: 150px;
+        }
       }
     }
 
@@ -185,6 +315,10 @@
 
       .bottom-txt__txt--large {
         width: 230px;
+
+        @include mq(tab) {
+          width: 180px;
+        }
       }
     }
 
@@ -198,12 +332,24 @@
             font-size: 32px;
             font-weight: $black;
             color: $primary-background-color;
+
+            @include mq(tab) {
+              font-size: 24px;
+            }
           }
       
           .bottom-txt__txt--large {
             height: 65px;
             margin: 0 10px;
             background: linear-gradient(transparent 75%, $pink-font-color 75%);
+
+            @include mq(tab) {
+              background: initial;
+              background-color: $pink-font-color;
+              border-radius: 5px;
+              height: 40px;
+              margin: 0;
+            }
       
             svg {
               overflow: initial;
@@ -215,6 +361,10 @@
                 fill              : $primary-background-color;
                 text-anchor       : middle;
                 dominant-baseline : alphabetic;
+
+                @include mq(tab) {
+                  font-size: 32px;
+                }
               }
       
               &:nth-child(1) {

@@ -190,7 +190,8 @@
       align-items: center;
 
       @include mq(tab) {
-        width: 380px;
+        width: 95vw;
+        max-width: 380px;
         height: 450.34px;
       }
 
@@ -875,7 +876,7 @@
           width: 201px;
 
           @include mq(tab) {
-            width: 121px;
+            width: 109px;
           }
         }
   
@@ -908,7 +909,7 @@
           width: 64px;
 
           @include mq(tab) {
-            width: 46px;
+            width: 25px;
           }
         }
       }

@@ -4,8 +4,10 @@ const works = [
         ttl: '脱毛案件',
         txt: '脱毛サロンへ来店し、体験コースを受けてもらうお仕事です。',
         img: '/images/about-work/work-img-1.png.webp',
-        width: '223',
-        height: '359',
+        pc_width: '223',
+        pc_height: '359',
+        tab_width: '125',
+        tab_height: '199',
         num: '4~5件',
         time: '1~2時間',
         money: '500円＋体験料1,000円'
@@ -14,8 +16,10 @@ const works = [
         ttl: 'クレジットカード案件',
         txt: 'クレジットカードを発行し、<br>発行スピードや使い勝手をレビューしてもらうお仕事です。',
         img: '/images/about-work/work-img-2.png.webp',
-        width: '462.51',
-        height: '350.45',
+        pc_width: '462.51',
+        pc_height: '350.45',
+        tab_width: '240',
+        tab_height: '181.85',
         num: '10~20件',
         time: '10~20分',
         money: '2,000~5,000円'
@@ -24,8 +28,10 @@ const works = [
         ttl: '保険案件',
         txt: '保険面談をしてもらうお仕事です。',
         img: '/images/about-work/work-img-3.png.webp',
-        width: '313.83',
-        height: '360',
+        pc_width: '313.83',
+        pc_height: '360',
+        tab_width: '174.35',
+        tab_height: '200',
         num: '10~20件',
         time: '1~2時間',
         money: '2,000~6,000円'
@@ -34,8 +40,10 @@ const works = [
         ttl: '美容サプリ案件',
         txt: 'サプリを購入し、商品のレビューをしてもらうお仕事です。',
         img: '/images/about-work/work-img-4.png.webp',
-        width: '368',
-        height: '331',
+        pc_width: '368',
+        pc_height: '331',
+        tab_width: '222',
+        tab_height: '200',
         num: '20~30件',
         time: '10~20分',
         money: '500円＋商材費用'
@@ -44,8 +52,10 @@ const works = [
         ttl: 'スキンケア案件',
         txt: 'スキンケア商品を購入し、商品のレビューをしてもらうお仕事です。',
         img: '/images/about-work/work-img-5.png.webp',
-        width: '300',
-        height: '316',
+        pc_width: '300',
+        pc_height: '316',
+        tab_width: '190',
+        tab_height: '200',
         num: '20~30件',
         time: '10~20分',
         money: '500円＋商材費用'
@@ -54,8 +64,10 @@ const works = [
         ttl: 'ヘアケア案件',
         txt: 'ヘアケア商品を購入し、商品のレビューをしてもらうお仕事です。',
         img: '/images/about-work/work-img-6.png.webp',
-        width: '335',
-        height: '332',
+        pc_width: '335',
+        pc_height: '332',
+        tab_width: '201.81',
+        tab_height: '200',
         num: '5~10件',
         time: '10~20分',
         money: '500円＋商材費用'
@@ -64,13 +76,14 @@ const works = [
 %>
 
 <div class="about-work__dot-box">
-  <% include('../components/_section-dot') %>
+  <%- include('../components/_section-dot') -%>
 </div>
+
 <section class="about-work">
 
   <div class="about-work__ttl-container">
     <img class="about-work__ttl-container--img-1" src="/images/about-work/ttl-img.png.webp" width="94" height="187" alt="女の人のイラスト">
-    <h2 class="about-work__ttl-container--ttl">
+    <h2 class="about-work__ttl-container--ttl pc">
       <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <text  dy="0.4em" id="aboutWorkTtl">どんなお仕事・調査があるの</text>
@@ -79,6 +92,26 @@ const works = [
         <use x="50%" y="50%" xlink:href="#aboutWorkTtl"></use>
       </svg>
     </h2>
+    <div class="about-work__ttl-container--ttl-box tab">
+      <h2 class="about-work__ttl-container--ttl">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <defs>
+            <text  dy="0.4em" id="aboutWorkTtlTab1">どんなお仕事</text>
+          </defs>
+          <use x="50%" y="50%" xlink:href="#aboutWorkTtlTab1"></use>
+          <use x="50%" y="50%" xlink:href="#aboutWorkTtlTab1"></use>
+        </svg>
+      </h2>
+      <h2 class="about-work__ttl-container--ttl">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <defs>
+            <text  dy="0.4em" id="aboutWorkTtlTab2">調査があるの</text>
+          </defs>
+          <use x="50%" y="50%" xlink:href="#aboutWorkTtlTab2"></use>
+          <use x="50%" y="50%" xlink:href="#aboutWorkTtlTab2"></use>
+        </svg>
+      </h2>
+    </div>
     <img class="about-work__ttl-container--img-2" src="/images/common/q-mark.png.webp" width="156.26" height="159.11" alt="？">
   </div>
 
@@ -95,7 +128,8 @@ const works = [
       <% for (const work of works) { %>
         <div class="about-work__work">
           <div class="work__img-with-dtl">
-            <img  class="work__img-with-dtl--img" src="<%= work.img %>" width="<%= work.width %>" height="<%= work.height %>" alt="仕事のイメージ画像">
+            <img  class="work__img-with-dtl--img pc" src="<%= work.img %>" width="<%= work.pc_width %>" height="<%= work.pc_height %>" alt="仕事のイメージ画像">
+            <img  class="work__img-with-dtl--img tab" src="<%= work.img %>" width="<%= work.tab_width %>" height="<%= work.tab_height %>" alt="仕事のイメージ画像">
             <div class="work__img-with-dtl--dtl-wrapper">
               <div class="dtl-box">
                 <div class="dtl-box__pink-box">
@@ -138,8 +172,9 @@ const works = [
           <use x="50%" y="50%" xlink:href="#txtLarge1"></use>
         </svg>
       </p>
-      <p class="bottom-txt__txt">な仕事が盛りだくさん</p>
+      <p class="bottom-txt__txt">な仕事が<span class="pc">盛りだくさん</span></p>
     </div>
+    <p class="bottom-txt__txt tab">盛りだくさん</p>
     <div class="about-work__bottom-txt--bottom-txt-box">
       <p class="bottom-txt__txt">あなたに</p>
       <p class="bottom-txt__txt--large">
@@ -151,8 +186,9 @@ const works = [
           <use x="50%" y="50%" xlink:href="#txtLarge2"></use>
         </svg>
       </p>
-      <p class="bottom-txt__txt">のお仕事がきっと見つかる</p>
+      <p class="bottom-txt__txt">のお仕事が<span class="pc">きっと見つかる</span></p>
     </div>
+    <p class="bottom-txt__txt tab">きっと見つかる</p>
   </div>
 
   <%- include('../components/_section-dot') -%>
