@@ -136,8 +136,13 @@
       }
 
       .ttl-box__right-txt {
-        height: 42px;
-        width: 58px;
+        height: 63px;
+        width: 83px;
+
+        @include mq(tab) {
+          height: 42px;
+          width: 58px;
+        }
 
         svg {
 
@@ -255,9 +260,16 @@
   .section-dot {
 
     .dot {
-      background-color: $brown-font-color;
+      background-color: $primary-background-color;
+
+      @include mq(tab) {
+        background-color: $brown-font-color;
+      }
       &:nth-child(3) {
-        background-color: $primary-background-color;
+
+        @include mq(tab) {
+          background-color: $primary-background-color;
+        }
       }
     }
 

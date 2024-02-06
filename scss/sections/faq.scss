@@ -3,14 +3,28 @@
   padding-bottom: 130px;
   padding-top: 100px;
 
+  @include mq(tab) {
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+
   .faq__ttl-box {
     display: flex;
     align-items: center;
+
     .faq__ttl-box--speech-bubble {
       position: relative;
       transform: translate(91px,0px);
 
+      @include mq(tab) {
+        transform: translate(30px,5px);
+      }
+
       .ttl-box__speech-bubble--img {
+
+        @include mq(tab) {
+          width: 71.31px;
+        }
       }
 
       .ttl-box__speech-bubble--txt {
@@ -24,6 +38,10 @@
         transform: translate(-50%,-50%);
         rotate: -10deg;
 
+        @include mq(tab) {
+          font-size: 19.67px;
+        }
+
         .pink {
           color: $light-pink-font-color;
         }
@@ -35,7 +53,13 @@
       height: 55px;
       padding: 0 70px;
 
+      @include mq(tab) {
+        padding: 0 60px;
+        width: 132px;
+      }
+
       svg {
+        overflow: initial;
 
         text {
           font-size         : 40px;
@@ -44,11 +68,19 @@
           fill              : $brown-font-color;
           text-anchor       : middle;
           dominant-baseline : alphabetic;
+
+          @include mq(tab) {
+            font-size: 32px;
+          }
         }
 
         &:nth-child(1) {
           stroke-width      : 6px;
           paint-order       : stroke;
+
+          @include mq(tab) {
+            stroke-width: 4px;
+          }
         }
 
         &:nth-child(2) {
@@ -59,6 +91,11 @@
 
     .faq__ttl-box--right-img {
       transform: translate(-120px,-3px);
+
+      @include mq(tab) {
+        width: 110px;
+        transform:translate(-50px,-5px);
+      }
     }
   }
 
@@ -70,15 +107,31 @@
     margin-bottom: 107px;
     width: 810px;
 
+    @include mq(tab) {
+      margin: 61px 0;
+      max-width: 390px;
+      width: 97vw;
+    }
+
     .fqa__content {
       font-family: $Sans;
       font-size: 24px;
       font-weight: $bold;
+      border: 4px solid #FFFFFF;
+      border-radius: 16px;
+
+      @include mq(tab) {
+        font-size: 16px;
+      }
 
       .fqa__content--q,
       .fqa__content--a  {
         display: flex;
         gap: 20px;
+
+        @include mq(tab) {
+          gap: 5px;
+        }
       }
 
 
@@ -86,8 +139,12 @@
         color: #FFFFFF;
         background-color: $light-pink-font-color;
         border-radius: 10px;
-        width: 100%;
         padding: 30px;
+
+        @include mq(tab) {
+          padding: 20px;
+          width: initial;
+        }
 
         .q__icon {
 
