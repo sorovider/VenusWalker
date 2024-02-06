@@ -287,11 +287,12 @@
       
       @include mq(tab) {
         font-family: $Sans;
-        font-size: 24px;
+        font-size: 5.58vw;
         font-weight: $black;
         color: $primary-background-color;
         position: relative;
         z-index: 200;
+        white-space: nowrap;
         margin: 0 -5px ;
         text-shadow: 2px 1px $accent-background-color, -2px 2px 1px $accent-background-color, 
                     2px -2px 1px $accent-background-color, -2px -2px 1px $accent-background-color, 
@@ -334,7 +335,7 @@
             color: $primary-background-color;
 
             @include mq(tab) {
-              font-size: 24px;
+              font-size: 5.58vw;
             }
           }
       

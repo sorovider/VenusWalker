@@ -9,6 +9,12 @@
   z-index: 100;
   margin-top: -230px;
 
+  @include mq(tab) {
+    margin-top: -240px;
+    background-image: url(/images/flow/sp/bg.svg);
+    height: 2148.52px;
+  }
+
   .left-shape {
     width: 29vw;
     position: absolute;
@@ -18,6 +24,12 @@
     @include mq(wpc) {
       top: -1vw;
         width : 12vw;
+    }
+
+    @include mq(tab) {
+      top: -50px;
+      width: 185px;
+      left: -30px;
     }
   }
 
@@ -31,14 +43,29 @@
         width: 12vw;
         bottom: 1vw;
     }
+
+    @include mq(tab) {
+      width: initial;
+      bottom: -20px;
+    }
   }
 
   .flow__ttl-box {
     display: flex;
 
+    @include mq(tab) {
+      align-items: flex-start;
+      width: 100%;
+      position: relative;
+    }
+
     .flow__ttl-box--img {
       position: relative;
       z-index: 300;
+
+      @include mq(tab) {
+        width: 151px;
+      }
     }
 
     .flow__ttl-box--txt-box {
@@ -48,19 +75,39 @@
       padding: 0 30px;
       border-radius: 3px;
       transform: translate(-84px,-94px);
+      
+      @include mq(tab) {
+        background: linear-gradient(transparent 80%,$brown-font-color 80%);
+        padding: 0 10px;
+        transform: initial;
+        margin-left: -59px;
+        transform: translateY(4px);
+      }
 
       .ttl-box__left-txt {
         font-family: $Hiragino;
         font-size: 40px;
         color: $primary-background-color;
         margin-right: 10px;
+
+        @include mq(tab) {
+          font-size: 24px;
+          white-space: nowrap;
+          margin-right: 0;
+        }
       }
       
       .ttl-box__middle-txt {
         height: 110px;
         width: 65px;
 
+        @include mq(tab) {
+          width: 41px;
+          height: 63px;
+        }
+
         svg {
+          overflow: initial;
 
           text {
             font-weight       : $bold;
@@ -70,6 +117,10 @@
             fill              : $light-pink-font-color;
             text-anchor       : middle;
             dominant-baseline : alphabetic;
+
+            @include mq(tab) {
+              font-size: 54px;
+            }
           }
   
           &:nth-child(1) {
@@ -85,8 +136,8 @@
       }
 
       .ttl-box__right-txt {
-        height: 70px;
-        width: 83px;
+        height: 42px;
+        width: 58px;
 
         svg {
 
@@ -98,6 +149,10 @@
             fill              : $light-pink-font-color;
             text-anchor       : middle;
             dominant-baseline : alphabetic;
+
+            @include mq(tab) {
+              font-size: 24px;
+            }
           }
   
           &:nth-child(1) {
@@ -127,6 +182,17 @@
     position: relative;
     z-index: 200;
     transform: translateY(-55px);
+    
+    @include mq(tab) {
+      height: 1858.5px;
+      max-width: 380px;
+      width: 87vw;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      transform: translateY(-5px);
+      margin-bottom: 39px;
+    }
 
     .flow__content {
       position: relative;
@@ -135,6 +201,11 @@
       align-items: center;
       width: 380px;
       height: 395px;
+
+      @include mq(tab) {
+        width: 340px;
+        height: 387px;
+      }
 
       .flow__content--step-num {
         background-color: $brown-font-color;
@@ -184,7 +255,11 @@
   .section-dot {
 
     .dot {
-      background-color: $primary-background-color;
+      background-color: $brown-font-color;
+      &:nth-child(3) {
+        background-color: $primary-background-color;
+      }
     }
+
   }
 }
