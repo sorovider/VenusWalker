@@ -2,6 +2,10 @@
   position: relative;
   margin-top: 51px;
 
+  @include mq(tab) {
+    margin-top: -70px;
+  }
+
   .left-shape {
     width: 27.5vw;
     position: absolute;
@@ -11,6 +15,12 @@
     @include mq(wpc) {
         width : 11vw;
         bottom: 2vw;
+    }
+
+    @include mq(tab) {
+      width: 190px;
+      bottom: 110px;
+      left: -20px;
     }
   }
 
@@ -24,6 +34,11 @@
         width: 11vw;
         bottom: 10vw;
     }
+
+    @include mq(tab) {
+      width: 120px;
+      top: 160px;
+    }
   }
 
   .seminar__ttl-container {
@@ -32,16 +47,30 @@
     margin-top: 85px;
     margin-bottom: -40px;
 
+    @include mq(tab) {
+      margin-top: 0;
+      margin-bottom: -85px;
+    }
+
 
     .seminar__ttl-container--ttl-box {
       position: relative;
       z-index: 100;
+      display: flex;
       transform: translateY(-15px);
+      flex-direction: column;
+      align-items: center;
 
       .ttl-box__ttl-note--box {
         transform: translateY(50px);
 
+        @include mq(tab) {
+          width: 170px;
+          transform: translateY(70px);
+        }
+        
         svg {
+          overflow: initial;
 
           text {
             font-weight       : $bold;
@@ -51,11 +80,19 @@
             fill              : #fffcf4;
             text-anchor       : middle;
             dominant-baseline : alphabetic;
+
+            @include mq(tab) {
+              font-size: 20px;
+            }
           }
   
           &:nth-child(1) {
             stroke-width      : 11px;
             paint-order       : stroke;
+
+            @include mq(tab) {
+              stroke-width: 7px;
+            }
           }
   
           &:nth-child(2) {
@@ -65,6 +102,10 @@
       }
 
       .ttl-box__ttl--txt {
+
+        @include mq(tab) {
+          width: 240px;
+        }
 
         svg {
           overflow: initial;
@@ -78,11 +119,19 @@
             fill              : $brown-font-color;
             text-anchor       : middle;
             dominant-baseline : alphabetic;
+
+            @include mq(tab) {
+              font-size: 40px;
+            }
           }
   
           &:nth-child(1) {
             stroke-width      : 11px;
             paint-order       : stroke;
+
+            @include mq(tab) {
+              stroke-width: 7px;
+            }
           }
   
           &:nth-child(2) {
@@ -94,10 +143,20 @@
 
     .seminar__ttl-container--left-img {
       transform: translateX(-32px);
+
+      @include mq(tab) {
+        width: 60px;
+        transform: translateX(20px);
+      }
     }
 
     .seminar__ttl-container--right-img {
       transform: translateX(10px);
+
+      @include mq(tab) {
+        width: 68px;
+        transform: translateX(-25px);
+      }
     }
   }
 
@@ -108,6 +167,19 @@
     position: relative;
     z-index: 100;
 
+    @include mq(tab) {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .seminar-contents__arrow {
+
+      @include mq(tab) {
+        rotate: 90deg;
+        margin: -60px 0;
+      }
+    }
+
     .seminar-left-content,
     .seminar-right-content {
       width: 620px;
@@ -117,12 +189,23 @@
       flex-direction: column;
       align-items: center;
 
+      @include mq(tab) {
+        width: 380px;
+        height: 450.34px;
+      }
+
       .seminar-content__top-content {
         width: 520px;
         height: 140px;
         border-radius: 10px;
         position: relative;
         margin-top: 75px;
+
+        @include mq(tab) {
+          width: 340px;
+          height: 87px;
+          margin-top: 50px;
+        }
 
         .seminar-content__top-content--img-box {
           width: 100%;
@@ -131,6 +214,19 @@
 
           .seminar-content__top-content--img {
             transform: translate(-13px,-14px);
+
+            @include mq(tab) {
+              width: 96px;
+              transform: translate(-13px,-20px);
+            }
+          }
+
+          .right-img {
+
+            @include mq(tab) {
+              width: 69px;
+              transform: translate(-13px,-14px);
+            }
           }
         }
 
@@ -155,6 +251,10 @@
           flex-direction: column;
           gap: 20px;
           list-style: none;
+
+          @include mq(tab) {
+            gap: 13px;
+          }
         }
       }
 
@@ -172,6 +272,10 @@
             font-family: $Sans;
             font-weight: $black;
             font-size: 24px;
+
+            @include mq(tab) {
+              font-size: 16px;
+            }
           }
 
           .seminar-content__top-content--bottom-text {
@@ -179,9 +283,17 @@
             white-space: nowrap;
             height: 50px;
 
+            @include mq(tab) {
+              height: 35px;
+            }
+
             .bottom-text--pink {
               width: 225px;
               background: linear-gradient(transparent 80%, #F9909C 80%);
+
+              @include mq(tab) {
+                width: 145px;
+              }
 
               svg {
                 overflow: initial;
@@ -194,11 +306,19 @@
                   fill              : $light-pink-font-color;
                   text-anchor       : middle;
                   dominant-baseline : alphabetic;
+
+                  @include mq(tab) {
+                    font-size: 24px;
+                  }
                 }
         
                 &:nth-child(1) {
                   stroke-width      : 7px;
                   paint-order       : stroke;
+
+                  @include mq(tab) {
+                    stroke-width: 4px;
+                  }
                 }
         
                 &:nth-child(2) {
@@ -209,6 +329,11 @@
 
             .bottom-text--black {
               width: 203px;
+
+              @include mq(tab) {
+                width: 128px;
+              }
+
               svg {
                 overflow: initial;
 
@@ -220,11 +345,19 @@
                   fill              : #000000;
                   text-anchor       : middle;
                   dominant-baseline : alphabetic;
+
+                  @include mq(tab) {
+                    font-size: 16px;
+                  }
                 }
         
                 &:nth-child(1) {
                   stroke-width      : 7px;
                   paint-order       : stroke;
+
+                  @include mq(tab) {
+                    stroke-width: 4px;
+                  }
                 }
         
                 &:nth-child(2) {
@@ -235,6 +368,10 @@
 
             .bottom-text--pink-mark {
               width: 30px;
+
+              @include mq(tab) {
+                width: 20px;
+              }
 
               svg {
                 overflow: initial;
@@ -247,11 +384,19 @@
                   fill              : $light-pink-font-color;
                   text-anchor       : middle;
                   dominant-baseline : alphabetic;
+
+                  @include mq(tab) {
+                    font-size: 16px;
+                  }
                 }
         
                 &:nth-child(1) {
                   stroke-width      : 7px;
                   paint-order       : stroke;
+
+                  @include mq(tab) {
+                    stroke-width: 4px;
+                  }
                 }
         
                 &:nth-child(2) {
@@ -272,28 +417,91 @@
       .seminar-content__dtl {
         color: #FFFFFF;
 
+        @include mq(tab) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
         .seminar-content__dtl--top-txt {
           font-size: 20px;
           margin-top: 38px;
+
+          @include mq(tab) {
+            font-size: 14px;
+            margin-top: 30px;
+          }
         }
 
         .seminar-content__dtl--list {
           margin: 40px 0;
 
+          @include mq(tab) {
+            margin: 30px 0;
+          }
+
           .seminar-content__dtl--txt-box {
             display: flex;
             gap: 30px;
             align-items: center;
+
+            .dtl-check-icon {
+              @include mq(tab) {
+                width: 37.81px;
+                gap: 20px;
+              }
+            }
             
             .dtl-txt {
-              font-size: 32px;
-              text-shadow:
-              1px 1px $light-pink-font-color,-1px -1px $light-pink-font-color,-1px 1px $light-pink-font-color,1px -1px $light-pink-font-color,
-              2px 1px $light-pink-font-color,-2px -1px $light-pink-font-color,-2px 1px  $light-pink-font-color,2px -1px $light-pink-font-color,
-              3px 2px 2px $light-pink-font-color,-3px -2px 2px $light-pink-font-color,-3px 2px 2px $light-pink-font-color,3px -2px 2px $light-pink-font-color,
-              4px 2px 2px  $light-pink-font-color,-4px -2px 2px  $light-pink-font-color,-4px 2px 2px $light-pink-font-color,4px -2px 2px $light-pink-font-color;
-              background: linear-gradient(transparent 70%, $brown-font-color 70%);
-              padding: 0 20px;
+              background: linear-gradient(transparent 65%, $brown-font-color 65%);
+              height: 46px;
+
+              @include mq(tab) {
+                width: 220px;
+                height: 30px;
+              }
+
+              svg {
+                overflow: initial;
+
+                text {
+                  font-family: $Sans;
+                  font-weight: $bold;
+                  font-size: 32px;
+                  stroke            : #E05E80;
+                  fill              : #FFFFFF;
+                  text-anchor       : middle;
+                  dominant-baseline : alphabetic;
+
+                  @include mq(tab) {
+                    font-size: 24px;
+                  }
+                }
+        
+                &:nth-child(1) {
+                  stroke-width      : 7px;
+                  paint-order       : stroke;
+
+                  @include mq(tab) {
+                    stroke-width: 5px;
+                  }
+                }
+        
+                &:nth-child(2) {
+                  stroke-width      : 0;
+                }
+              }
+            }
+          }
+
+          .seminar-content__dtl--txt-box-2 {
+
+            .dtl-txt {
+              width: 252px;
+
+              @include mq(tab) {
+                width: 185px;
+              }
             }
           }
         }
@@ -301,6 +509,10 @@
         .seminar-content__dtl--bottom-txt {
           font-size: 20px;
           text-align: center;
+
+          @include mq(tab) {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -319,6 +531,10 @@
             font-weight: $black;
             color: #FFFFFF;
             font-size: 24px;
+
+            @include mq(tab) {
+              font-size: 16px;
+            }
           }
 
           .seminar-content__top-content--bottom-text {
@@ -326,9 +542,17 @@
             white-space: nowrap;
             height: 50px;
 
+            @include mq(tab) {
+              height: 35px;
+            }
+
             .bottom-text--large {
               width: 150px;
               background: linear-gradient(transparent 80%, #F9909C 80%);
+
+              @include mq(tab) {
+                width: 100px;
+              }
 
               svg {
                 overflow: initial;
@@ -341,11 +565,19 @@
                   fill              : #FFFFFF;
                   text-anchor       : middle;
                   dominant-baseline : alphabetic;
+
+                  @include mq(tab) {
+                    font-size: 24px;
+                  }
                 }
         
                 &:nth-child(1) {
                   stroke-width      : 7px;
                   paint-order       : stroke;
+
+                  @include mq(tab) {
+                    stroke-width: 5px;
+                  }
                 }
         
                 &:nth-child(2) {
@@ -367,11 +599,19 @@
                   fill              : #FFFFFF;
                   text-anchor       : middle;
                   dominant-baseline : alphabetic;
+
+                  @include mq(tab) {
+                    font-size: 16px;
+                  }
                 }
         
                 &:nth-child(1) {
                   stroke-width      : 7px;
                   paint-order       : stroke;
+
+                  @include mq(tab) {
+                    stroke-width: 5px;
+                  }
                 }
         
                 &:nth-child(2) {
@@ -382,10 +622,18 @@
 
             .small-1 {
               width: 80px;
+
+              @include mq(tab) {
+                width: 55px;
+              }
             }
 
             .small-2 {
               width: 133px;
+
+              @include mq(tab) {
+                width: 90px;
+              }
             }
           }
 
@@ -399,9 +647,21 @@
 
       .seminar-content__dtl {
 
+        @include mq(tab) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+
         .seminar-content__dtl--top-txt {
           font-size: 32px;
           margin-top: 47px;
+
+          @include mq(tab) {
+            margin-top: 20px;
+            font-size: 24px;
+          }
         }
 
         .seminar-content__dtl--list {
@@ -419,6 +679,10 @@
               -2px  0px 1px #fffcf4,
               0px -2px 1px #fffcf4;
 
+              @include mq(tab) {
+                font-size: 17px;
+              }
+
             .move-right-txt {
               display: inline-block;
               transform: translateX(30px);
@@ -432,40 +696,233 @@
 
   .seminar__bottom-content {
     display: flex;
-    margin: 85px 0 48px 0;
+    align-items: center;
+    margin: 85px 0 50px 0;
+
+    @include mq(tab) {
+      position: relative;
+      margin: 60px 0 57px 0;
+    }
 
     .seminar__bottom-content--txt {
-      font-family: $Sans;
-      font-weight: $bold;
-      font-size: 32px;
-      color: #000;
       position: relative;
       z-index: 100;
-      text-align: center;
 
-      .pink {
-        color: $light-pink-font-color;
-        font-size: 40px;
-        text-shadow: 1px 1px #fffcf4, 
-        -1px -1px #fffcf4, -1px 1px #fffcf4, 1px -1px #fffcf4,
-        2px 2px #fffcf4, -2px -2px #fffcf4, -2px 2px #fffcf4, 2px -2px #fffcf4,
-        3px 3px #fffcf4, -3px -3px #fffcf4, -3px 3px #fffcf4, 3px -3px #fffcf4,
-        4px 2px #fffcf4, -4px -2px #fffcf4, -4px 2px #fffcf4, 4px -2px #fffcf4;
+      .seminar__bottom-content--top-txt {
+        height: 69px;
 
-        .big-pink {
-          font-size: 64px;
-          font-weight: $black;
+        @include mq(tab) {
+          height: 35px;
         }
-        
-        .middle-pink {
-          font-size: 54px;
-          font-weight: $black;
+        svg {
+          overflow: initial;
+  
+          text {
+            font-family: $Sans;
+            font-weight: $bold;
+            font-size: 32px;
+            stroke            : $primary-background-color;
+            fill              : #000;
+            text-anchor       : middle;
+            dominant-baseline : alphabetic;
+
+            @include mq(tab) {
+              font-size: 24px;
+            }
+          }
+  
+          &:nth-child(1) {
+            stroke-width      : 11px;
+            paint-order       : stroke;
+  
+            @include mq(tab) {
+              stroke-width: 7px;
+            }
+          }
+  
+          &:nth-child(2) {
+            stroke-width      : 0;
+          }
+        }
+      }
+  
+      .seminar__bottom-content--bottom-txt {
+        display: flex;
+        align-items: flex-end;
+  
+        .seminar__bottom-content--bottom-small-txt {
+          height: 48px;
+          position: relative;
+          z-index: 200;
+          
+          @include mq(tab) {
+            height: 40px;
+          }
+
+          svg {
+            overflow: initial;
+    
+            text {
+              font-family: $Sans;
+              font-weight: $bold;
+              font-size: 40px;
+              stroke            : $primary-background-color;
+              fill              : $light-pink-font-color;
+              text-anchor       : middle;
+              dominant-baseline : alphabetic;
+
+              @include mq(tab) {
+                font-size: 24px;
+              }
+            }
+    
+            &:nth-child(1) {
+              stroke-width      : 11px;
+              paint-order       : stroke;
+    
+              @include mq(tab) {
+                stroke-width: 7px;
+              }
+            }
+    
+            &:nth-child(2) {
+              stroke-width      : 0;
+            }
+          }
+        }
+        .seminar__bottom-content--bottom-large-txt {
+          height: 64px;
+
+          @include mq(tab) {
+            height: 46px;
+          }
+          
+          svg {
+            overflow: initial;
+    
+            text {
+              font-family: $Sans;
+              font-weight: $black;
+              font-size: 64px;
+              stroke            : $primary-background-color;
+              fill              : $light-pink-font-color;
+              text-anchor       : middle;
+              dominant-baseline : alphabetic;
+
+              @include mq(tab) {
+                font-size: 32px;
+                letter-spacing: -0.08em;
+              }
+            }
+    
+            &:nth-child(1) {
+              stroke-width      : 11px;
+              paint-order       : stroke;
+    
+              @include mq(tab) {
+                stroke-width: 7px;
+              }
+            }
+    
+            &:nth-child(2) {
+              stroke-width      : 0;
+            }
+          }
+        }
+        .seminar__bottom-content--bottom-middle-txt {
+          width: 162px;
+          height: 58px;
+
+          @include mq(tab) {
+            width: 96px;
+            height: 46px;
+          }
+
+          svg {
+            overflow: initial;
+    
+            text {
+              font-family: $Sans;
+              font-weight: $black;
+              font-size: 54px;
+              stroke            : $primary-background-color;
+              fill              : $light-pink-font-color;
+              text-anchor       : middle;
+              dominant-baseline : alphabetic;
+              letter-spacing: -0.1em;
+
+              @include mq(tab) {
+                font-size: 32px;
+              }
+            }
+    
+            &:nth-child(1) {
+              stroke-width      : 11px;
+              paint-order       : stroke;
+    
+              @include mq(tab) {
+                stroke-width: 7px;
+              }
+            }
+    
+            &:nth-child(2) {
+              stroke-width      : 0;
+            }
+          }
+        }
+  
+        .seminar__bottom-content--bottom-small-txt-1 {
+          width: 201px;
+
+          @include mq(tab) {
+            width: 121px;
+          }
+        }
+  
+        .seminar__bottom-content--bottom-small-txt-2 {
+          width: 45px;
+
+          @include mq(tab) {
+            width: 25px;
+          }
+        }
+  
+        .seminar__bottom-content--bottom-large-txt-1 {
+          width: 128px;
+
+          @include mq(tab) {
+            width: 68px;
+          }
+        }
+  
+        .seminar__bottom-content--bottom-large-txt-2 {
+          width: 64px;
+
+          @include mq(tab) {
+            width: 25px;
+            margin-left: 5px;
+          }
+        }
+  
+        .seminar__bottom-content--bottom-large-txt-3 {
+          width: 64px;
+
+          @include mq(tab) {
+            width: 46px;
+          }
         }
       }
     }
 
     .seminar__bottom-content--img {
       margin-left: -110px;
+
+      @include mq(tab) {
+        position: absolute;
+        right: 0;
+        width: 233px;
+        transform: translateX(10px);
+      }
     }
   }
 }
