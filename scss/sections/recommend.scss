@@ -1,5 +1,5 @@
 .recommend {
-    background-image: url(/images/recommend/bg/recommend-bg.svg);
+    background-image: url(../images/recommend/bg/recommend-bg.svg);
     background-size: 100% 100%;
     height: 748px;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     margin-bottom: 70px;
 
     @include mq(tab) {
-        background-image: url(/images/recommend/sp/bg.svg);
+        background-image: url(../images/recommend/sp/bg.svg);
         justify-content: center;
         margin-bottom: 0;
     }

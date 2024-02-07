@@ -4,7 +4,7 @@
         position: relative;
         width: 100vw;
         height: 70.55555vw;
-        background-image: url(/images/main-view/bg/main-view-bg.png.webp);
+        background-image: url(../images/main-view/bg/main-view-bg.png.webp);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -12,7 +12,7 @@
         align-items: center;
 
         @include mq(tab) {
-            background-image: url(/images/main-view/sp/main-view-bg.png.webp);
+            background-image: url(../images/main-view/sp/main-view-bg.png.webp);
             height: 255vw;
         }
 
@@ -31,7 +31,7 @@
                 }
     
                 .top-contents__logo-box {
-                    background-image: url(/images/main-view/bg/logo-bg.svg);
+                    background-image: url(../images/main-view/bg/logo-bg.svg);
                     width: 21.18vw;
                     height: 6.527vw;
                     background-size: cover;
