@@ -76,6 +76,7 @@
             @include mq(tab) {
                 width: 47.9vw;
                 max-width: 206px;
+                transform: translateX(-10px);
             }
         }
     }
