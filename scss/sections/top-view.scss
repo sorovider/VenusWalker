@@ -2,18 +2,56 @@
     
     .main-view {
         position: relative;
-        width: 100vw;
-        height: 70.55555vw;
-        background-image: url(/images/main-view/bg/main-view-bg.png.webp);
-        background-size: cover;
+        background-image: url(/images/main-view/bg/bg.svg);
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-size: 100% 100%;
+        width: 100vw;
+        height: 115vh;
 
         @include mq(tab) {
             background-image: url(/images/main-view/sp/main-view-bg.png.webp);
             height: 255vw;
+        }
+
+        .top-left-shape,
+        .top-middle-shape,
+        .top-right-shape,
+        .bottom-left-shape,
+        .bottom-right-shape {
+            position: absolute;
+        }
+
+        .top-left-shape {
+            top: 0;
+            left: 0;
+            width: 7.708vw;
+        }
+
+        .top-middle-shape {
+            top: 0;
+            left: 50%;
+            width: 27.0138vw;
+        }
+
+        .top-right-shape {
+            top: 0;
+            right: 0;
+            width: 16.94vw;
+        }
+
+        .bottom-left-shape {
+            bottom: 0;
+            left: 0;
+            width: 23.68vw;
+        }
+
+        .bottom-right-shape {
+            bottom: 0;
+            right: 0;
+            width: 15.277vw;
         }
 
         .first-view {
@@ -545,7 +583,7 @@
         color: $primary-font-color;
         font-size: 33.32px;
         text-align: center;
-        margin-top: 46px;
+        margin-top: 3.194vw;
 
         @include mq(tab) {
             margin-top: 20px;

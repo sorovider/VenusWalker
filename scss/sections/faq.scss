@@ -12,6 +12,10 @@
     display: flex;
     align-items: center;
 
+    @include mq(tab) {
+      transform: translateX(15px);
+    }
+
     .faq__ttl-box--speech-bubble {
       position: relative;
       transform: translate(91px,0px);
