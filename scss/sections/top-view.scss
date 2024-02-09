@@ -62,7 +62,7 @@
             .fv__top-contents {
                 display: flex;
                 justify-content: space-between;
-                padding: 2.6vw 5.76vw 0 2.5vw;
+                padding:2.6vw 5.76vw 0 2.5vw;
 
                 @include mq(tab) {
                     padding: 2.6vw 1.86vw 0 2.5vw;
@@ -74,6 +74,8 @@
                     height: 6.527vw;
                     background-size: cover;
                     position: relative;
+                    max-width: 36.79vh;
+                    max-height: 11.34vh;
 
                     @include mq(tab) {
                         width: 32.79vw;
@@ -86,6 +88,7 @@
                         left: 50%;
                         transform: translate(-50%,-50%);
                         width: 19.444vw;
+                        max-width: 33.77vh;
 
                         @include mq(tab) {
                             width: 30.23vw;
@@ -112,6 +115,8 @@
                         align-items: center;
                         justify-content: center;
                         gap: 0.764vw;
+                        max-width: 19.66vh;
+                        max-height: 5.19vh;
 
                         @include mq(tab) {
                             border: 0.465vw solid $brown-font-color;
@@ -121,6 +126,7 @@
     
                         .cta-btn-arrow {
                             width: 0.416vw;
+                            max-width: 0.72vh;
 
                             @include mq(tab) {
                                 width: 0.93vw;
@@ -133,6 +139,7 @@
                             font-family: $Kiwi;
                             font-weight: $medium;
                             white-space: nowrap;
+                            font-size: min(1.111vw,1.93vh);
 
                             @include mq(tab) {
                                 font-size: 2.79vw;
@@ -186,7 +193,7 @@
                         color: $primary-font-color;
                         padding: 0.417vw 0.694vw;
                         margin-bottom: 1.181vw;
-                        font-size: 1.18vw;
+                        font-size: min(1.18vw,2.05vh);
 
                         @include mq(tab) {
                             padding: 1.2vw 2.325vw;
@@ -200,7 +207,7 @@
                         font-family: $Sans;
                         color: $primary-font-color;
                         font-weight: $black;
-                        font-size: 1.389vw;
+                        font-size: min(1.389vw,2.41vh);
 
                         @include mq(tab) {
                             font-size: 3.72vw;
@@ -209,7 +216,7 @@
     
                         .pink {
                             color: $pink-font-color;
-                            font-size: 2.222vw;
+                            font-size: min(2.222vw,3.86vh);
 
                             @include mq(tab) {
                                 font-size: 5.58vw;
@@ -228,6 +235,7 @@
     
                         .fv-title__img {
                             width: 35.972vw;
+                            max-width: 62.48vh;
 
                             @include mq(tab) {
                                 width: 85.348vw;
@@ -260,6 +268,8 @@
                             align-items: center;
                             justify-content: center;
                             flex-direction: column;
+                            max-width: 16.04vh;
+                            max-height: 16.04vh;
 
                             @include mq(tab) {
                                 width: 27.9vw;
@@ -281,7 +291,7 @@
                             .txt-1 {
                                 font-family: $Sans;
                                 font-weight: $bold;
-                                font-size: 1.667vw;
+                                font-size: min(1.667vw,2.90vh);
                                 line-height: 0.7;
                                 text-align: left;
                                 margin-left: 0.694vw;
@@ -292,7 +302,7 @@
                                 }
                                 
                                 .pink {
-                                    font-size: 2.778vw;
+                                    font-size: min(2.778vw,4.83vh);
                                     display: inline-block;
                                     transform: translate(0.138vw, 0.625vw);
                                     text-shadow:
@@ -315,7 +325,7 @@
                             .txt-2 {
                                 font-family: $Sans;
                                 font-weight: $bold;
-                                font-size: 1.063vw;
+                                font-size: min(1.063vw,1.85vh);
                                 line-height: 1.3;
 
                                 @include mq(tab) {
@@ -323,7 +333,7 @@
                                 }
                                 
                                 .pink {
-                                    font-size: 2.657vw;
+                                    font-size: min(2.657vw,4.62vh);
 
                                     @include mq(tab) {
                                         font-size: 8.095vw;
@@ -333,7 +343,7 @@
     
                             .txt-3 {
                                 font-family: $Hiragino;
-                                font-size: 1.063vw;
+                                font-size: min(1.063vw,1.85vh);
                                 line-height: 1.3;
 
                                 @include mq(tab) {
@@ -346,6 +356,7 @@
 
                                 .num-and-txt-img {
                                     width: 6.1458vw;
+                                    max-width: 10.68vh;
                                     margin: 0.5vw 0;
 
                                     @include mq(tab) {
@@ -355,7 +366,7 @@
 
                                 .put-on-txt {
                                     font-family: $Hiragino;
-                                    font-size: 1.063vw;
+                                    font-size: min(1.063vw,1.85vh);
                                     display: inline-block;
                                     transform: translate(-0.277vw,1.277vw);
                                     
@@ -386,6 +397,8 @@
                             align-items: center;
                             justify-content: center;
                             gap: 1.736vw;
+                            max-width: 24.25vh;
+                            max-height: 7.36vh;
 
                             @include mq(tab) {
                                 width: 46.74vw;
@@ -395,6 +408,7 @@
     
                             .cta-btn-arrow {
                                 width: 0.416vw;
+                                max-width: 0.72vh;
 
                                 @include mq(tab) {
                                     width: 1.395vw;
@@ -403,7 +417,7 @@
         
                             .cta-btn-pink__txt, 
                             .cta-btn-yellow__txt {
-                                font-size: 1.389vw;
+                                font-size: min(1.389vw,2.41vh);
                                 font-family: $Kiwi;
                                 font-weight: $medium;
                                 white-space: nowrap;
@@ -469,6 +483,7 @@
     
                             .sppech-bubble-left__img {
                                 width: 11.597vw;
+                                max-width: 20.14vh;
 
                                 @include mq(tab) {
                                     width: 27.2vw;
@@ -477,6 +492,7 @@
     
                             .sppech-bubble-middle__img {
                                 width: 16.493vw;
+                                max-width: 28.65vh;
 
                                 @include mq(tab) {
                                     width: 38.837vw;
@@ -485,6 +501,7 @@
     
                             .sppech-bubble-right__img {
                                 width: 16.284vw;
+                                max-width: 28.29vh;
 
                                 @include mq(tab) {
                                     width: 38.37vw;
@@ -496,7 +513,7 @@
                                 text-align: center;
                                 font-family: $Hiragino;
                                 color: $primary-font-color;
-                                font-size: 1.667vw;;
+                                font-size: min(1.667vw,2.90vh);
                                 white-space: nowrap;
 
                                 @include mq(tab) {
@@ -550,6 +567,7 @@
     
                     .right-contents__fv-img {
                         width: 60vw;
+                        max-width: 104.22vh;
 
                         @include mq(tab) {
                             width: 117vw;
@@ -562,6 +580,7 @@
         .intro__top-txt {
             margin-top: 2vw;
             width: 22vw;
+            max-width: 47.21vh;
 
             @include mq(tab) {
                 width: 50vw;
@@ -581,7 +600,7 @@
         font-family: $Sans;
         font-weight: $bold;
         color: $primary-font-color;
-        font-size: 33.32px;
+        font-size: min(33.32px,57.88vh);
         text-align: center;
         margin-top: 3.194vw;
 
@@ -594,7 +613,7 @@
             font-family: $Din;
             font-weight: $bold;
             color: $pink-font-color;
-            font-size: 55.53px;
+            font-size: min(55.53px,96.46vh);
 
             @include mq(tab) {
                 font-size: 36px;
