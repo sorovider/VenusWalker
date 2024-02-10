@@ -52,6 +52,7 @@
 
   .flow__ttl-box {
     display: flex;
+    justify-content: center;
 
     @include mq(tab) {
       align-items: flex-start;

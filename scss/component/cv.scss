@@ -208,11 +208,11 @@
 
             .txt-3 {
               font-family: $Hiragino;
-              font-size: 1.063vw;
+              font-size: 16px;
               line-height: 1.3;
 
               @include mq(tab) {
-                  font-size: 3.237vw;
+                  font-size: 14.04px;
               }
           }
 
@@ -220,27 +220,25 @@
               display: flex;
 
               .num-and-txt-img {
-                  width: 6.1458vw;
-                  margin: 0.5vw 0;
+                  width: 100px;
 
                   @include mq(tab) {
-                      width: 19.069vw;
+                      width: 88px;
                   }
               }
 
               .put-on-txt {
                   font-family: $Hiragino;
-                  font-size: 1.063vw;
+                  font-size: 16px;
                   display: inline-block;
-                  transform: translate(-0.277vw,1.277vw);
+                  transform: translate(-4px,15px);
                   text-shadow: 2px 1px #fff, -2px 2px 1px #fff, 
                                 2px -2px 1px #fff, -2px -2px 1px #fff, 
                                 2px 0 1px #fff, 0 2px 1px #fff, 
                                 -2px 0 1px #fff, 0 -2px 1px #fff;
                   
                   @include mq(tab) {
-                      font-size: 3.237vw;
-                      transform: translate(-1vw,3.277vw);
+                      font-size: 14.04px;
                       text-shadow: 1px 1px #fff, -1px 1px 1px #fff, 
                       1px -1px 1px #fff, -1px -1px 1px #fff, 
                       1px 0 1px #fff, 0 1px 1px #fff, 

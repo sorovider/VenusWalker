@@ -406,7 +406,7 @@
                                     
                                     @include mq(tab) {
                                         font-size: min(3.237vw, 1.51vh);
-                                        transform: translate(min(-1vw, -0.47vh),min(3.277vw, 1.53vh));
+                                        transform: translate(max(-1vw, -0.47vh),min(4vw, 1.86vh));
                                     }
                                 }
                             }
@@ -594,7 +594,7 @@
                             transform: translate(min(-1.013vw,-1.76vh), min(3.472vw,6.03vh));
 
                             @include mq(tab) {
-                                transform: translate(min(-5vw, -2.33vh), min(2vw, 0.93vh));
+                                transform: translate(max(-5vw, -2.33vh), min(2vw, 0.93vh));
                             }
     
                             .sppech-bubble__txt {
