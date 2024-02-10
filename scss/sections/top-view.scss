@@ -9,7 +9,6 @@
         align-items: center;
         background-size: 100% 100%;
         width: 100vw;
-        height: 115vh;
 
         @include mq(tab) {
             background-image: url(/images/main-view/sp/main-view-bg.png.webp);
@@ -28,30 +27,40 @@
             top: 0;
             left: 0;
             width: 7.708vw;
+            // max-width: 13.39vh;
+            max-width: 25vh;
         }
 
         .top-middle-shape {
             top: 0;
-            left: 50%;
+            left: 36%;
             width: 27.0138vw;
+            // max-width: 46.92vh;
+            max-width: 55vh;
         }
 
         .top-right-shape {
             top: 0;
             right: 0;
             width: 16.94vw;
+            // max-width: 29.43vh;
+            max-width: 40vh;
         }
 
         .bottom-left-shape {
             bottom: 0;
             left: 0;
             width: 23.68vw;
+            // max-width: 41.13vh;
+            max-width: 60vh;
         }
 
         .bottom-right-shape {
             bottom: 0;
             right: 0;
             width: 15.277vw;
+            // max-width: 26.54vh;
+            max-width: 44vh;
         }
 
         .first-view {
@@ -180,7 +189,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    transform: translate(3.125vw, 6.25vw);
+                    transform: translate(min(3.125vw,5.43vh),  min(6.25vw,10.86vh));
 
                     @include mq(tab) {
                         transform: initial;
@@ -191,8 +200,8 @@
                         background-color: #FCC944;
                         font-family: $Hiragino;
                         color: $primary-font-color;
-                        padding: 0.417vw 0.694vw;
-                        margin-bottom: 1.181vw;
+                        padding: min(0.417vw,0.72vh) min(0.694vw,1.21vh) ;
+                        margin-bottom: min(1.181vw,2.05vh);
                         font-size: min(1.18vw,2.05vh);
 
                         @include mq(tab) {
@@ -226,7 +235,7 @@
     
                     .left-contents__fv-title {
                         transform: translateX(-1.04vw);
-                        margin: -1.944vw 0 -2.5vw 0;
+                        margin: max(-1.944vw,-3.38vh) 0 max(-2.5vw,-8.34vh) 0;
 
                         @include mq(tab) {
                             transform: inherit;
@@ -248,7 +257,7 @@
                     .left-contents__circle-contents {
                         display: flex;
                         padding: 0;
-                        gap: 1.667vw;
+                        gap: min(1.667vw,2.90vh);
                         margin-bottom: 1.667vw;
 
                         @include mq(tab) {
@@ -294,7 +303,7 @@
                                 font-size: min(1.667vw,2.90vh);
                                 line-height: 0.7;
                                 text-align: left;
-                                margin-left: 0.694vw;
+                                margin-left: min(0.694vw,1.21vh);
 
                                 @include mq(tab) {
                                     font-size: 5.076vw;
@@ -304,7 +313,7 @@
                                 .pink {
                                     font-size: min(2.778vw,4.83vh);
                                     display: inline-block;
-                                    transform: translate(0.138vw, 0.625vw);
+                                    transform: translate(min(0.138vw,0.24vh), min(0.625vw,1.09vh));
                                     text-shadow:
                                     2px 1px #FFFFFF,
                                     -2px  2px 1px #FFFFFF,
@@ -357,7 +366,7 @@
                                 .num-and-txt-img {
                                     width: 6.1458vw;
                                     max-width: 10.68vh;
-                                    margin: 0.5vw 0;
+                                    margin: min(0.5vw,0.87vh) 0;
 
                                     @include mq(tab) {
                                         width: 19.069vw;
@@ -368,7 +377,7 @@
                                     font-family: $Hiragino;
                                     font-size: min(1.063vw,1.85vh);
                                     display: inline-block;
-                                    transform: translate(-0.277vw,1.277vw);
+                                    transform: translate(min(-0.277vw,0.48vh), min(1.277vw,3.22vh));
                                     
                                     @include mq(tab) {
                                         font-size: 3.237vw;
@@ -382,7 +391,7 @@
                     .left-contents__bottom-cta-btns {
                         display: flex;
                         align-items: center;
-                        gap: 2.083vw;
+                        gap: min(2.083vw,3.62vh);
 
                         @include mq(tab) {
                             gap: 1.6279vw;
@@ -396,7 +405,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            gap: 1.736vw;
+                            gap: min(1.736vw,3.02vh);
                             max-width: 24.25vh;
                             max-height: 7.36vh;
 
@@ -469,7 +478,7 @@
                     .right-contents__sppech-bubble-box {
                         display: flex;
                         align-items: center;
-                        transform: translate(6.94vw, 2.569vw);
+                        transform: translate(min(6.94vw,12.06vh), min(2.569vw,4.46vh));
 
                         @include mq(tab) {
                             transform: initial;
@@ -523,7 +532,7 @@
                         }
     
                         .sppech-bubble__left {
-                            transform: translate(0.694vw, 3.263vw);
+                            transform: translate(min(0.694vw,1.21vh), min(3.263vw,5.67vh));
 
                             @include mq(tab) {
                                 transform: translate(15vw, 2vw);
@@ -551,7 +560,7 @@
                         }
     
                         .sppech-bubble__right {
-                            transform: translate(-2.013vw, 3.472vw);
+                            transform: translate(min(-1.013vw,-1.76vh), min(3.472vw,6.03vh));
 
                             @include mq(tab) {
                                 transform: translate(-5vw, 2vw);
