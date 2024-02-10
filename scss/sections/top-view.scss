@@ -12,7 +12,6 @@
 
         @include mq(tab) {
             background-image: url(/images/main-view/sp/main-view-bg.png.webp);
-            height: 255vw;
         }
 
         .top-left-shape,
@@ -27,40 +26,56 @@
             top: 0;
             left: 0;
             width: 7.708vw;
-            // max-width: 13.39vh;
             max-width: 25vh;
+            @include mq(tab) {
+                width: 15.58vw;
+                top: 3%;
+            }
         }
 
         .top-middle-shape {
             top: 0;
             left: 36%;
             width: 27.0138vw;
-            // max-width: 46.92vh;
             max-width: 55vh;
+
+            @include mq(tab) {
+                width: 38.837vw;
+                left: 27%;
+            }
         }
 
         .top-right-shape {
             top: 0;
             right: 0;
             width: 16.94vw;
-            // max-width: 29.43vh;
             max-width: 40vh;
+
+            @include mq(tab) {
+                width: 26.279vw;
+            }
         }
 
         .bottom-left-shape {
             bottom: 0;
             left: 0;
             width: 23.68vw;
-            // max-width: 41.13vh;
             max-width: 60vh;
+
+            @include mq(tab) {
+                width: 36.976vw;
+                bottom: 11%;
+            }
         }
 
         .bottom-right-shape {
             bottom: 0;
             right: 0;
             width: 15.277vw;
-            // max-width: 26.54vh;
             max-width: 44vh;
+            @include mq(tab) {
+                width: 20.697vw;
+            }
         }
 
         .first-view {
@@ -89,6 +104,8 @@
                     @include mq(tab) {
                         width: 32.79vw;
                         height: 10vw;
+                        max-width: 15.28vh;
+                        max-height: 4.66vh;
                     }
     
                     .top-contents__logo {
@@ -101,6 +118,7 @@
 
                         @include mq(tab) {
                             width: 30.23vw;
+                            max-width: 14.08vh;
                         }
                     }
                 }
@@ -128,9 +146,11 @@
                         max-height: 5.19vh;
 
                         @include mq(tab) {
-                            border: 0.465vw solid $brown-font-color;
+                            border: min(0.465vw, 0.22vh) solid $brown-font-color;
                             width: 28.139vw;
                             height: 7.209vw;
+                            max-width: 13.11vh;
+                            max-height: 3.36vh;
                         }
     
                         .cta-btn-arrow {
@@ -139,6 +159,7 @@
 
                             @include mq(tab) {
                                 width: 0.93vw;
+                                max-width: 0.43vh;
                             }
                         }
     
@@ -151,7 +172,7 @@
                             font-size: min(1.111vw,1.93vh);
 
                             @include mq(tab) {
-                                font-size: 2.79vw;
+                                font-size: min(2.79vw, 1.30vh);
                             }
                         }
                     }
@@ -205,10 +226,10 @@
                         font-size: min(1.18vw,2.05vh);
 
                         @include mq(tab) {
-                            padding: 1.2vw 2.325vw;
-                            margin-bottom: 3.255vw;
-                            margin-top: 4.88vw;
-                            font-size: 2.79vw;
+                            padding: min(1.2vw, 0.56vh) min(2.325vw, 1.08vh);
+                            margin-bottom: min(3.255vw, 1.52vh);
+                            margin-top: min(4.88vw, 2.27vh);
+                            font-size: min(2.79vw, 1.30vh);
                         }
                     }
     
@@ -219,8 +240,8 @@
                         font-size: min(1.389vw,2.41vh);
 
                         @include mq(tab) {
-                            font-size: 3.72vw;
-                            transform: translateX(-9.302vw);
+                            font-size: min(3.72vw, 1.73vh);
+                            transform: translateX(min(-9.302vw, -4.33vh));
                         }
     
                         .pink {
@@ -228,7 +249,7 @@
                             font-size: min(2.222vw,3.86vh);
 
                             @include mq(tab) {
-                                font-size: 5.58vw;
+                                font-size: min(5.58vw, 2.60vh);
                             }
                         }
                     }
@@ -248,8 +269,9 @@
 
                             @include mq(tab) {
                                 width: 85.348vw;
-                                margin-top: -5.813vw;
-                                transform: translateX(3.02vw);
+                                margin-top: max(-5.813vw, -2.71vh);
+                                transform: translateX(min(3.02vw, 1.41vh));
+                                max-width: 39.76vh;
                             }
                         }
                     }
@@ -261,8 +283,8 @@
                         margin-bottom: 1.667vw;
 
                         @include mq(tab) {
-                            gap: 2.79vw;
-                            margin-bottom: 7.67vw;
+                            gap: min(2.79vw, 1.30vh);
+                            margin-bottom: min(7.67vw, 3.57vh);
                             margin-top: 0;
                         }
     
@@ -284,6 +306,8 @@
                                 width: 27.9vw;
                                 height: 27.9vw;
                                 filter: drop-shadow(0 0.9vw 0.2vw rgba(0, 0, 0, .1450980392));
+                                max-width: 13.00vh;
+                                max-height: 13.00vh;
                             }
     
                             .circle-content__txt {
@@ -306,8 +330,8 @@
                                 margin-left: min(0.694vw,1.21vh);
 
                                 @include mq(tab) {
-                                    font-size: 5.076vw;
-                                    transform: translateX(0.69vw);
+                                    font-size: min(5.076vw, 2.36vh);
+                                    transform: translateX(min(0.69vw, 0.32vh));
                                 }
                                 
                                 .pink {
@@ -325,8 +349,8 @@
                                     0px -2px 1px #FFFFFF;
 
                                     @include mq(tab) {
-                                        font-size: 8.46vw;
-                                        transform: translate(0.138vw,1.625vw);
+                                        font-size: min(8.46vw, 3.94vh);;
+                                        transform: translate(min(0.138vw, 0.06vh),min(1.625vw, 0.76vh));
                                     }
                                 }
                             }
@@ -338,14 +362,14 @@
                                 line-height: 1.3;
 
                                 @include mq(tab) {
-                                    font-size: 3.23vw;
+                                    font-size: min(3.23vw, 1.50vh);;
                                 }
                                 
                                 .pink {
                                     font-size: min(2.657vw,4.62vh);
 
                                     @include mq(tab) {
-                                        font-size: 8.095vw;
+                                        font-size: min(8.095vw, 3.77vh);
                                     }
                                 }
                             }
@@ -356,7 +380,7 @@
                                 line-height: 1.3;
 
                                 @include mq(tab) {
-                                    font-size: 3.237vw;
+                                    font-size: min(3.237vw, 1.51vh);
                                 }
                             }
 
@@ -370,6 +394,7 @@
 
                                     @include mq(tab) {
                                         width: 19.069vw;
+                                        max-width: 8.88vh;
                                     }
                                 }
 
@@ -380,8 +405,8 @@
                                     transform: translate(min(-0.277vw,0.48vh), min(1.277vw,3.22vh));
                                     
                                     @include mq(tab) {
-                                        font-size: 3.237vw;
-                                        transform: translate(-1vw,3.277vw);
+                                        font-size: min(3.237vw, 1.51vh);
+                                        transform: translate(min(-1vw, -0.47vh),min(3.277vw, 1.53vh));
                                     }
                                 }
                             }
@@ -394,7 +419,7 @@
                         gap: min(2.083vw,3.62vh);
 
                         @include mq(tab) {
-                            gap: 1.6279vw;
+                            gap: min(1.6279vw, 0.76vh);
                         }
         
                         .bottom-cta-btns__cta-btn--pink,
@@ -412,7 +437,9 @@
                             @include mq(tab) {
                                 width: 46.74vw;
                                 height: 14.18vw;
-                                gap: 1.627vw;
+                                gap: min(1.627vw, 0.76vh);
+                                max-width: 21.77vh;
+                                max-height: 6.61vh;
                             }
     
                             .cta-btn-arrow {
@@ -421,6 +448,7 @@
 
                                 @include mq(tab) {
                                     width: 1.395vw;
+                                    max-width: 0.65vh;
                                 }
                             }
         
@@ -432,7 +460,7 @@
                                 white-space: nowrap;
 
                                 @include mq(tab) {
-                                    font-size: 4.65vw;
+                                    font-size: min(4.65vw, 2.17vh);
                                 }
                             }
                         }
@@ -442,7 +470,7 @@
                             border: 0.208vw solid $brown-font-color;
 
                             @include mq(tab) {
-                                border: 0.697vw solid $brown-font-color;
+                                border: min(0.697vw, 0.32vh) solid $brown-font-color;
                             }
         
                             .cta-btn-pink__txt {
@@ -455,7 +483,7 @@
                             border: 0.208vw solid #000;
 
                             @include mq(tab) {
-                                border: 0.697vw solid #000;
+                                border: min(0.697vw, 0.32vh) solid #000;
                             }
                             
                             .cta-btn-yellow__txt {
@@ -472,7 +500,7 @@
                     align-items: center;
     
                     @include mq(wpc) {
-                        gap: 3vw;
+                        gap: min(3vw, 1.40vh);
                     }
     
                     .right-contents__sppech-bubble-box {
@@ -496,6 +524,7 @@
 
                                 @include mq(tab) {
                                     width: 27.2vw;
+                                    max-width: 12.67vh;
                                 }
                             }
     
@@ -505,6 +534,7 @@
 
                                 @include mq(tab) {
                                     width: 38.837vw;
+                                    max-width: 18.09vh;
                                 }
                             }
     
@@ -514,6 +544,7 @@
 
                                 @include mq(tab) {
                                     width: 38.37vw;
+                                    max-width: 17.88vh;
                                 }
                             }
     
@@ -526,7 +557,7 @@
                                 white-space: nowrap;
 
                                 @include mq(tab) {
-                                    font-size: 3.25vw;
+                                    font-size: min(3.25vw, 1.51vh);
                                 }
                             }
                         }
@@ -535,7 +566,7 @@
                             transform: translate(min(0.694vw,1.21vh), min(3.263vw,5.67vh));
 
                             @include mq(tab) {
-                                transform: translate(15vw, 2vw);
+                                transform: translate(min(15vw, 6.99vh), min(2vw, 0.93vh));
                             }
     
                             .sppech-bubble__txt {
@@ -548,7 +579,7 @@
                         .sppech-bubble__middle {
 
                             @include mq(tab) {
-                                transform: translateX(8.1395vw);
+                                transform: translateX(min(8.1395vw, 3.79vh));
                                 z-index: 100;
                             }
     
@@ -563,7 +594,7 @@
                             transform: translate(min(-1.013vw,-1.76vh), min(3.472vw,6.03vh));
 
                             @include mq(tab) {
-                                transform: translate(-5vw, 2vw);
+                                transform: translate(min(-5vw, -2.33vh), min(2vw, 0.93vh));
                             }
     
                             .sppech-bubble__txt {
@@ -580,6 +611,7 @@
 
                         @include mq(tab) {
                             width: 117vw;
+                            max-width: 54.51vh;
                         }
                     }
                 }
@@ -590,6 +622,8 @@
             margin-top: 2vw;
             width: 22vw;
             max-width: 47.21vh;
+            position: relative;
+            z-index: 100;
 
             @include mq(tab) {
                 width: 50vw;
@@ -598,8 +632,9 @@
             }
 
             @include mq(sp) {
-                margin-top: 8.83vw;
+                margin-top: min(8.83vw, 4.11vh);
                 width: 93vw;
+                max-width: 43.33vh;
             }
         }
     }
