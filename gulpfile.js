@@ -25,6 +25,7 @@ const distPaths = [
     './images/**/*.{webp,ico,svg}',
     './css/**/*.css',
     './fonts/**/*',
+    './lib/**/*',
     '.htaccess',
     paths.js,
     paths.sass,

@@ -1,6 +1,43 @@
 <%
 const works = [
     {
+      ttl: '美容サプリ案件',
+      txt: 'サプリを購入し、商品のレビューをしてもらうお仕事です。',
+      img: '../images/about-work/work-img-4.png.webp',
+      pc_width: '368',
+      pc_height: '331',
+      tab_width: '222',
+      tab_height: '200',
+      num: '20~30件',
+      time: '10~20分',
+      money: '500円＋商材費用'
+    },
+    {
+      ttl: 'ヘアケア案件',
+      txt: 'ヘアケア商品を購入し、商品のレビューをしてもらうお仕事です。',
+      img: '../images/about-work/work-img-6.png.webp',
+      pc_width: '335',
+      pc_height: '332',
+      tab_width: '201.81',
+      tab_height: '200',
+      num: '5~10件',
+      time: '10~20分',
+      money: '500円＋商材費用'
+    },
+    {
+      ttl: '保険案件',
+      txt: '保険面談をしてもらうお仕事です。',
+      img: '../images/about-work/work-img-3.png.webp',
+      pc_width: '313.83',
+      pc_height: '360',
+      tab_width: '174.35',
+      tab_height: '200',
+      num: '10~20件',
+      time: '1~2時間',
+      money: '2,000~6,000円'
+    },
+    /*
+    {
         ttl: '脱毛案件',
         txt: '脱毛サロンへ来店し、体験コースを受けてもらうお仕事です。',
         img: '../images/about-work/work-img-1.png.webp',
@@ -25,30 +62,6 @@ const works = [
         money: '2,000~5,000円'
     },
     {
-        ttl: '保険案件',
-        txt: '保険面談をしてもらうお仕事です。',
-        img: '../images/about-work/work-img-3.png.webp',
-        pc_width: '313.83',
-        pc_height: '360',
-        tab_width: '174.35',
-        tab_height: '200',
-        num: '10~20件',
-        time: '1~2時間',
-        money: '2,000~6,000円'
-    },
-    {
-        ttl: '美容サプリ案件',
-        txt: 'サプリを購入し、商品のレビューをしてもらうお仕事です。',
-        img: '../images/about-work/work-img-4.png.webp',
-        pc_width: '368',
-        pc_height: '331',
-        tab_width: '222',
-        tab_height: '200',
-        num: '20~30件',
-        time: '10~20分',
-        money: '500円＋商材費用'
-    },
-    {
         ttl: 'スキンケア案件',
         txt: 'スキンケア商品を購入し、商品のレビューをしてもらうお仕事です。',
         img: '../images/about-work/work-img-5.png.webp',
@@ -60,18 +73,7 @@ const works = [
         time: '10~20分',
         money: '500円＋商材費用'
     },
-    {
-        ttl: 'ヘアケア案件',
-        txt: 'ヘアケア商品を購入し、商品のレビューをしてもらうお仕事です。',
-        img: '../images/about-work/work-img-6.png.webp',
-        pc_width: '335',
-        pc_height: '332',
-        tab_width: '201.81',
-        tab_height: '200',
-        num: '5~10件',
-        time: '10~20分',
-        money: '500円＋商材費用'
-    },
+    */
   ]
 %>
 
@@ -116,14 +118,6 @@ const works = [
   </div>
 
   <div class="about-work__works-container">
-    <div class="works__arrow-box">
-      <div class="works__arrow-box--left-arrow">
-        <img src="../images/about-work/left-arrow.png.webp" width="12" height="24" alt="左矢印">
-      </div>
-      <div class="works__arrow-box--right-arrow">
-        <img src="../images/about-work/right-arrow.png.webp" width="12" height="24" alt="右矢印">
-      </div>
-    </div>
     <div class="about-work__works">
       <% for (const work of works) { %>
         <div class="about-work__work">

@@ -26,9 +26,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= head.url %>">
 
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+
     <link rel="icon" href="images/favicon.ico?<%= timestamp %>">
 
     <link rel="stylesheet" href="css/app.min.css?<%= timestamp %>">
+
     <!-- Google Tag Manager -->
     <!-- <script>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -90,6 +93,9 @@
     </div>
     <%- include('sections/footer.ejs') %>
     
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
     <script src="js/main.js?<%= timestamp %>"></script>
 </body>
 
