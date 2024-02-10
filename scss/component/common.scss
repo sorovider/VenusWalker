@@ -45,6 +45,9 @@ button {
     @include mq(tab) {
         display: none !important;
     }
+    @include mq(sp) {
+        display: inherit !important;
+    }
 }
 
 .tab {
@@ -58,6 +61,12 @@ button {
         display: none !important;
     }
     @include mq(tab) {
+        display: none !important;
+    }
+}
+
+.pcTab {
+    @include mq(sp) {
         display: none !important;
     }
 }
