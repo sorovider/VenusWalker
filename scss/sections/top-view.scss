@@ -11,7 +11,7 @@
         width: 100vw;
 
         @include mq(tab) {
-            background-image: url(/images/main-view/sp/main-view-bg.png.webp);
+            background-image: url(/images/main-view/sp/bg.svg);
         }
 
         .top-left-shape,
