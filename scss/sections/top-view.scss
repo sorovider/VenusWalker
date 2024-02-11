@@ -2,7 +2,7 @@
     
     .main-view {
         position: relative;
-        background-image: url(/images/main-view/bg/bg.svg);
+        background-image: url(../images/main-view/bg/bg.svg);
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
@@ -11,7 +11,7 @@
         width: 100vw;
 
         @include mq(sp) {
-            background-image: url(/images/main-view/sp/bg.svg);
+            background-image: url(../images/main-view/sp/bg.svg);
         }
 
         .top-left-shape,
@@ -93,7 +93,7 @@
                 }
     
                 .top-contents__logo-box {
-                    background-image: url(/images/main-view/bg/logo-bg.svg);
+                    background-image: url(../images/main-view/bg/logo-bg.svg);
                     width: 21.18vw;
                     height: 6.527vw;
                     background-size: cover;
