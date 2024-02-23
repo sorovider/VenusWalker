@@ -9,6 +9,13 @@
     @include mq(wpc) {
         width : 12vw;
     }
+
+    @include mq(tab) {
+      width: 229px;
+      height: 224px;
+      left: -80px;
+      top: 0;
+    }
   }
 
 .right-shape {
@@ -21,17 +28,36 @@
         width: 12vw;
         bottom: 1vw;
     }
+
+    @include mq(tab) {
+      width: 268px;
+      height: 239px;
+      right: -20px;
+    }
   }
 
   .voice__ttl-container {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    position: relative;
+
+    @include mq(tab) {
+      margin-bottom: 32px;
+      margin-top: 55px;
+    }
 
     .voice__ttl-container--ttl {
+
+      @include mq(tab) {
+        width: 219px;
+      }
     }
 
     .voice__ttl-container--img {
+      @include mq(tab) {
+        width: 65px;
+      }
     }
   }
 
@@ -41,6 +67,11 @@
     display: flex;
     gap: 16px;
     margin-bottom: 82px;
+
+    @include mq(tab) {
+      flex-direction: column;
+      gap: 19px;
+    }
 
     .voice-content {
       display: flex;

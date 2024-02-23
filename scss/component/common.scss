@@ -2,6 +2,8 @@ html,body {
     margin: 0;
     overflow-x: hidden;
     background-color: #FFFCF4;
+
+    scroll-padding-top: 6.944vw;
 }
 
 h1,
@@ -25,7 +27,6 @@ td,
 label,
 option {
     scroll-behavior: smooth;
-    scroll-padding-top: auto;
 }
 
 
