@@ -1,3 +1,10 @@
+html {
+    &.no-scroll {
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -173,6 +180,7 @@
             align-items: center;
             justify-content: center;
             gap: min(0.7vw, 0.33vh);
+            cursor: pointer;
 
 
             .hamburger-menu__icon--line {
@@ -197,6 +205,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: .5s;
+        transform: translateX(100%);
+        opacity: .5;
+        
+        &.js-hamburger-menu-open {
+            transform: translateX(0);
+            opacity: 1;
+        }
 
         .hamburger-menu__nav--close-btn {
             background-color: #fff;
