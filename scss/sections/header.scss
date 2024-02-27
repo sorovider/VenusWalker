@@ -115,16 +115,16 @@ html {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1.395vw;
+            gap: 2.395vw;
             max-width: 19.66vh;
             max-height: 5.19vh;
 
             @include mq(sp) {
-                border: min(0.465vw, 0.22vh) solid $brown-font-color;
-                padding: 0 3.72vw;
+                border: min(0.5vw, 0.23vh) solid $brown-font-color;
+                padding: 0 5.72vw;
                 height: 7.209vw;
                 max-width: 13.11vh;
-                max-height: 3.36vh;
+                max-height: 4.19vh;
             }
 
             .cta-btn-arrow {
@@ -169,26 +169,26 @@ html {
 
         .hamburger-menu__icon {
             background-color: #fff;
-            border: min(0.372vw, 0.17vh) solid $brown-font-color;
+            border: min(0.5vw, 0.23vh) solid $brown-font-color;
             border-radius: 50%;
-            width: 6.9767vw;
-            max-width: 3.25vh;
-            height: 6.9767vw;
-            max-height: 3.25vh;
+            width: 9vw;
+            max-width: 4.19vh;
+            height: 9vw;
+            max-height: 4.19vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: min(0.7vw, 0.33vh);
+            gap: min(1vw, 0.47vh);
             cursor: pointer;
 
 
             .hamburger-menu__icon--line {
                 background-color: #0A0A0A;
-                height: 0.372vw;
-                max-height: 0.17vh;
-                width: 3.9vw;
-                max-width: 1.82vh;
+                height: 0.5vw;
+                max-height: 0.23vh;
+                width: 5vw;
+                max-width: 2.33vh;
                 border-radius: min(3vw, 1.40vh);
 
             }
@@ -216,12 +216,12 @@ html {
 
         .hamburger-menu__nav--close-btn {
             background-color: #fff;
-            border: min(0.372vw, 0.17vh) solid $brown-font-color;
+            border: min(0.5vw, 0.23vh) solid $brown-font-color;
             border-radius: 50%;
-            width: 6.9767vw;
-            max-width: 3.25vh;
-            height: 6.9767vw;
-            max-height: 3.25vh;
+            width: 9vw;
+            max-width: 4.19vh;
+            height: 9vw;
+            max-height: 4.19vh;
             position: absolute;
             top: 2.6vw;
             right: 2vw;
@@ -229,15 +229,15 @@ html {
             &::after, &::before {
                 content: " ";
                 display: block;
-                height: 0.372vw;
-                max-height: 0.17vh;
-                width: 3.9vw;
-                max-width: 1.82vh;
+                height: 0.5vw;
+                max-height: 0.23vh;
+                width: 5vw;
+                max-width: 2.33vh;
                 background-color: #0A0A0A;
                 border-radius: 3vw;
                 position: absolute;
-                top :min(3.1vw, 1.44vh);
-                left: min(3.6vw, 1.68vh);
+                top :45%;
+                left: 50%;
                 transform-origin: 50%;
             }
 
