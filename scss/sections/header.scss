@@ -115,13 +115,13 @@ html {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 2.395vw;
+            gap: 2vw;
             max-width: 19.66vh;
             max-height: 5.19vh;
 
             @include mq(sp) {
                 border: min(0.5vw, 0.23vh) solid $brown-font-color;
-                padding: 0 5.72vw;
+                padding: 0 4vw;
                 height: 7.209vw;
                 max-width: 13.11vh;
                 max-height: 4.19vh;
