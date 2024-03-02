@@ -1,0 +1,38 @@
+.floating-btn-container {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .floating-btn {
+    border: min(0.697vw, 0.32vh) solid #000;
+    padding: min(4vw, 1.86vh) min(16.5vw,7.69vh);
+    max-width: 34vh;
+    border-radius: 6.944vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f653a2;
+    letter-spacing: 0.5vw;
+    margin-bottom: 1vw;
+    gap: 3vw;
+  
+  
+    .floating-btn__txt {
+        font-family: $Kiwi;
+        font-weight: $medium;
+        white-space: nowrap;
+        font-size: min(5vw, 2.33vh);
+        line-height: 1;
+        color: $white-font-color;
+    }
+
+    .floating-btn-arrow {
+          width: 2vw;
+          max-width: 0.93vh;
+  }
+  }
+}

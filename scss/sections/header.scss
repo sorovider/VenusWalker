@@ -16,7 +16,7 @@ html {
     width: 100%;
     box-sizing: border-box;
 
-    @include mq(sp) {
+    @include mq(tab) {
         padding: 2.6vw 1.86vw 0 2.5vw;
     }
 
@@ -30,7 +30,7 @@ html {
         max-height: 11.34vh;
         background-repeat: no-repeat;
 
-        @include mq(sp) {
+        @include mq(tab) {
             width: 32.79vw;
             height: 10vw;
             max-width: 15.28vh;
@@ -45,7 +45,7 @@ html {
             width: 19.444vw;
             max-width: 33.77vh;
 
-            @include mq(sp) {
+            @include mq(tab) {
                 width: 30.23vw;
                 max-width: 14.08vh;
             }
@@ -57,8 +57,8 @@ html {
         align-items: center;
         gap: 1.38vw;
 
-        @include mq(sp) {
-            gap: 1.86vw;
+        @include mq(tab) {
+            gap: 4vw;
         }
 
         .top-contents__nav {
@@ -119,21 +119,22 @@ html {
             max-width: 19.66vh;
             max-height: 5.19vh;
 
-            @include mq(sp) {
-                border: min(0.5vw, 0.23vh) solid $brown-font-color;
-                padding: 0 4vw;
-                height: 7.209vw;
+            @include mq(tab) {
+                border: min(0.697vw, 0.32vh) solid $brown-font-color;
+                padding: 0 7vw;
+                height: 11vw;
                 max-width: 13.11vh;
-                max-height: 4.19vh;
+                max-height:  5.12vh;
+                gap: 3vw;
             }
 
             .cta-btn-arrow {
                 width: 0.416vw;
                 max-width: 0.72vh;
 
-                @include mq(sp) {
-                    width: 0.93vw;
-                    max-width: 0.43vh;
+                @include mq(tab) {
+                    width: 1.5vw;
+                    max-width:  0.70vh;
                 }
             }
 
@@ -145,8 +146,9 @@ html {
                 white-space: nowrap;
                 font-size: min(1.111vw, 1.93vh);
 
-                @include mq(sp) {
-                    font-size: min(2.79vw, 1.30vh);
+                @include mq(tab) {
+                    font-size: min(4vw, 1.86vh);
+                    line-height: 1;
                 }
             }
         }
@@ -169,12 +171,12 @@ html {
 
         .hamburger-menu__icon {
             background-color: #fff;
-            border: min(0.5vw, 0.23vh) solid $brown-font-color;
+            border: min(0.697vw, 0.32vh) solid $brown-font-color;
             border-radius: 50%;
-            width: 9vw;
-            max-width: 4.19vh;
-            height: 9vw;
-            max-height: 4.19vh;
+            width: 11vw;
+            max-width: 5.12vh;
+            height: 11vw;
+            max-height: 5.12vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -216,12 +218,12 @@ html {
 
         .hamburger-menu__nav--close-btn {
             background-color: #fff;
-            border: min(0.5vw, 0.23vh) solid $brown-font-color;
+            border: min(0.697vw, 0.32vh) solid $brown-font-color;
             border-radius: 50%;
-            width: 9vw;
-            max-width: 4.19vh;
-            height: 9vw;
-            max-height: 4.19vh;
+            width: 11vw;
+            max-width: 5.12vh;
+            height: 11vw;
+            max-height: 5.12vh;
             position: absolute;
             top: 2.6vw;
             right: 2vw;
