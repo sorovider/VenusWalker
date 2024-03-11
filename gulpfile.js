@@ -18,7 +18,7 @@ const paths = {
     css: './css/**/*.css',
     images: './images/**/*.+(jpg|jpeg|png|gif)',
     ejs: './ejs/**/*.ejs',
-    html: './**/*.html',
+    html: './index.html',
 }
 
 const distPaths = [
